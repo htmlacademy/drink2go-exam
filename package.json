@@ -24,7 +24,10 @@
     "html-03": "backstop test --config=\"backstop-html-03.config.js\"",
     "html-04": "backstop test --config=\"backstop-html-04.config.js\"",
     "img-01": "backstop test --config=\"backstop-img-01.config.js\"",
-    "test-ff": "backstop test --config=\"backstop-test-ff.config.js\""
+    "test-ff": "backstop test --config=\"backstop-test-ff.config.js\"",
+    "test-logo": "backstop test --config=\"backstop-test-logo.config.js\"",
+    "test-swiper": "backstop reference --config=\"backstop-test-swiper.config.js\" && backstop test --config=\"backstop-test-swiper.config.js\"",
+    "test-menu": "backstop reference --config=\"backstop-test-menu.config.js\" && backstop test --config=\"backstop-test-menu.config.js\""
   },
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.5",
