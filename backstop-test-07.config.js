@@ -34,7 +34,7 @@ module.exports = {
       { page: 'index', selector: 'viewport', content: 'HTML Academy' },
     ].flatMap(({page, selector, content, ancestor }, idx) => [/*'normal',*/ 'hover', 'active', 'focus', 'disable'].map(state => ({
         "label": `${page} TEST-07. ${state} ${idx}`,
-        "url": `./project/${page}.html`,
+        "url": `http://localhost:3000/${page}.html`,
         "referenceUrl": `./reference/${page}.html`,
         selectors: [selector],
         content,

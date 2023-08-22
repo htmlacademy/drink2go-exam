@@ -26,14 +26,14 @@ module.exports = {
   "scenarios": [
     {
       "label": "index TEST-08.",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       misMatchThreshold: 2,
       requireSameDimension: false
     },
     ...indexSections.map((section) => ({
       "label": `index ${section} TEST-08`,
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
       misMatchThreshold: 2,

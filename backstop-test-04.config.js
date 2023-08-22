@@ -42,7 +42,7 @@ module.exports = {
   "scenarios": [
     {
       "label": `index TEST-04. sticky footer.`,
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       removeSelectors: ["[data-test='main'] > *"],
       misMatchThreshold: 1,
@@ -50,7 +50,7 @@ module.exports = {
     },
     ...indexSections.map((section) => ({
       "label": `index ${section} TEST-04. textDecrease.`,
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
       onReadyScript: "textDecrease.js",
@@ -59,7 +59,7 @@ module.exports = {
     })),
     ...indexSections.map((section) => ({
       "label": `index ${section} TEST-04. textIncrease.`,
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
       onReadyScript: "textIncrease.js",
@@ -68,7 +68,7 @@ module.exports = {
     })),
     ...indexSections.map((section) => ({
       "label": `index ${section} TEST-04. childrenDecrease.`,
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
       onReadyScript: "childrenDecrease.js",
@@ -77,7 +77,7 @@ module.exports = {
     })),
     ...indexSections.map((section) => ({
       "label": `index ${section} TEST-04. childrenIncrease.`,
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
       onReadyScript: "childrenIncrease.js",
@@ -87,7 +87,7 @@ module.exports = {
     })),
     {
       "label": "index TEST-04. imgDecrease.",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "imgDecrease.js",
       misMatchThreshold: 1,
@@ -95,7 +95,7 @@ module.exports = {
     },
     {
       "label": "index TEST-04. imgIncrease.",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "imgIncrease.js",
       misMatchThreshold: 1,
@@ -103,7 +103,7 @@ module.exports = {
     },
     {
       "label": "index TEST-04. imgLandscape",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "imgLandscape.js",
       misMatchThreshold: 1,
@@ -111,7 +111,7 @@ module.exports = {
     },
     {
       "label": "index TEST-04. imgPortrait",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "imgPortrait.js",
       misMatchThreshold: 1,

@@ -16,7 +16,7 @@ module.exports = {
     {
       "label": "index JS-1. next",
       "url": "http://localhost:3000/",
-      "referenceUrl": "http://localhost:3000/",
+      "referenceUrl": "./reference/index.html",
       misMatchThreshold: 2,
       requireSameDimension: false,
       clickSelectors: ['.swiper-button-next'],
@@ -26,7 +26,7 @@ module.exports = {
     {
       "label": "index JS-1. prev",
       "url": "http://localhost:3000/",
-      "referenceUrl": "http://localhost:3000/",
+      "referenceUrl": "./reference/index.html",
       misMatchThreshold: 2,
       requireSameDimension: false,
       clickSelectors: ['.swiper-button-next', '.swiper-button-prev'],
@@ -36,7 +36,7 @@ module.exports = {
     {
       "label": "index JS-1. bullet",
       "url": "http://localhost:3000/",
-      "referenceUrl": "http://localhost:3000/",
+      "referenceUrl": "./reference/index.html",
       misMatchThreshold: 2,
       requireSameDimension: false,
       clickSelectors: ['.swiper-pagination > *:nth-child(3)'],

@@ -9,6 +9,10 @@ module.exports = async (page, scenario, vp) => {
       return true;
     });
   });
+
+  await page.waitForSelector('.leaflet-marker-icon');
+  await page.waitForSelector('.leaflet-tile-loaded');
+
   if (scenario.content) {
     const [elementHandle] = await page.$x(`//*[contains(text(), '${scenario.content}')]`);
     const selector = await page.evaluate((element) => {

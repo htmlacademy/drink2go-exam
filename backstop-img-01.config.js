@@ -25,14 +25,14 @@ module.exports = {
   "scenarios": [
     {
       "label": "index bg colors",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "hide-bg.js",
       requireSameDimensions: false,
     },
     {
       "label": "index img",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       hideSelectors: ["body > *"],
       showSelectors: ["img", "svg"],

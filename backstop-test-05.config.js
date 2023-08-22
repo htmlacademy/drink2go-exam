@@ -34,7 +34,7 @@ module.exports = {
   "scenarios": [
     ...indexSections.map((section) => ({
       "label": `index ${section} TEST-05. Шрифты.`,
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
       onReadyScript: "textStylesOnly.js",

@@ -16,7 +16,7 @@ module.exports = {
     {
       "label": "index JS-1. open",
       "url": "http://localhost:3000/",
-      "referenceUrl": "http://localhost:3000/",
+      "referenceUrl": "./reference/index.html",
       misMatchThreshold: 1,
       requireSameDimension: false,
       clickSelectors: ['.js-toggle-button'],
@@ -26,7 +26,7 @@ module.exports = {
     {
       "label": "index JS-1. close",
       "url": "http://localhost:3000/",
-      "referenceUrl": "http://localhost:3000/",
+      "referenceUrl": "./reference/index.html",
       misMatchThreshold: 1,
       requireSameDimension: false,
       clickSelectors: ['.js-toggle-button', '.js-toggle-button'],

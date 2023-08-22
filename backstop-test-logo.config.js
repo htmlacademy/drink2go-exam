@@ -26,7 +26,7 @@ module.exports = {
   "scenarios": [
     {
       "label": "index TEST-Logo.",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       misMatchThreshold: 1,
       selectors: [`[data-test="logo"]`],

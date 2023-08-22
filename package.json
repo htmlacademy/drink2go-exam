@@ -14,6 +14,10 @@
   },
   "homepage": "https://github.com/htmlacademy/drink2go-etalon#readme",
   "scripts": {
+    "preview": "gulp buildProd && gulp startServer",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "w3c": "gulp validateMarkup --silent",
+    "bemlinter": "gulp lintBem --silent",
     "reference": "node reference.js",
     "test-03": "backstop test --config=\"backstop-test-03.config.js\"",
     "test-04": "backstop test --config=\"backstop-test-04.config.js\"",
@@ -26,14 +30,33 @@
     "img-01": "backstop test --config=\"backstop-img-01.config.js\"",
     "test-ff": "backstop test --config=\"backstop-test-ff.config.js\"",
     "test-logo": "backstop test --config=\"backstop-test-logo.config.js\"",
-    "test-swiper": "backstop reference --config=\"backstop-test-swiper.config.js\" && backstop test --config=\"backstop-test-swiper.config.js\"",
-    "test-menu": "backstop reference --config=\"backstop-test-menu.config.js\" && backstop test --config=\"backstop-test-menu.config.js\""
+    "test-swiper": "backstop test --config=\"backstop-test-swiper.config.js\"",
+    "test-menu": "backstop test --config=\"backstop-test-menu.config.js\""
   },
   "devDependencies": {
+    "autoprefixer": "10.4.13",
+    "browser-sync": "2.27.10",
+    "del": "7.0.0",
+    "gulp": "4.0.2",
+    "gulp-html-bemlinter": "2.1.2",
+    "gulp-if": "3.0.0",
+    "gulp-libsquoosh": "1.1.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-sass": "5.1.0",
+    "gulp-stacksvg": "1.0.6",
+    "gulp-svgmin": "4.1.0",
+    "gulp-terser": "2.1.0",
+    "gulp-w3c-html-validator": "5.1.3",
+    "postcss": "8.4.19",
+    "postcss-csso": "6.0.1",
+    "postcss-scss": "4.0.5",
+    "postcss-url": "10.1.3",
+    "sass": "1.56.1",
     "@linthtml/linthtml": "^0.9.5",
     "backstopjs": "^6.2.2",
     "linthtml-config-htmlacademy": "^1.0.2",
-    "stylelint": "^13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.12"
+    "stylelint": "^15.10.3",
+    "stylelint-config-htmlacademy": "^2.0.4"
   }
 }

@@ -20,7 +20,7 @@ module.exports = {
   "scenarios": [
     {
       "label": "index form send",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       clickSelector: "[data-test=catalog] button[type='submit']",
       "viewports": [

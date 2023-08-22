@@ -29,7 +29,7 @@ module.exports = {
   "scenarios": [
     {
       "label": "index check hover size",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "markup-interaction-hover.js",
       hideSelectors: ["body > *"],
@@ -37,7 +37,7 @@ module.exports = {
     },
     {
       "label": "index check active size",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "markup-interaction-active.js",
       hideSelectors: ["body > *"],

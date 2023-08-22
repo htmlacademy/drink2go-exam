@@ -25,7 +25,7 @@ module.exports = {
   "scenarios": [
     {
       "label": "index links",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       showSelectors: ["a"],
       hideSelectors: ["body > *"],
@@ -33,7 +33,7 @@ module.exports = {
     },
     {
       "label": "index buttons",
-      "url": "./project/index.html",
+      "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       showSelectors: ["button"],
       hideSelectors: ["body > *"],
