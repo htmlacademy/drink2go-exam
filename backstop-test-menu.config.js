@@ -21,7 +21,7 @@ module.exports = {
       requireSameDimension: false,
       clickSelectors: ['.js-toggle-button'],
       postInteractionWait: 500,
-      selectors: [`[data-test="header"]`],
+      selectors: [`viewport`],
     },
     {
       "label": "index JS-1. close",
@@ -31,7 +31,7 @@ module.exports = {
       requireSameDimension: false,
       clickSelectors: ['.js-toggle-button', '.js-toggle-button'],
       postInteractionWait: 500,
-      selectors: [`[data-test="header"]`],
+      selectors: [`viewport`],
     },
   ],
   "paths": {
