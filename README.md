@@ -26,10 +26,13 @@
 - `npm run test-menu` **JS1-Б1** покажет поведение меню
 
 ### Проверка кода
-- `npm run lint-html` **HTML1-PROJ-01** покажет ошибки html
-- `npm run lint-css` **HTML1-PROJ-01** покажет ошибки css
-- `npm run lint-bem` **HTML2-Б5** покажет ошибки BEM
+- `npm run linthtml` **HTML1-PROJ-01** покажет ошибки html
+- `npm run stylelint` **HTML1-PROJ-01** покажет ошибки css
+- `npm run bemlinter` **HTML2-Б5** покажет ошибки BEM
+- `npm run w3c` **HTML1-HTML-07** Валидация HTML
 - `npm run lint-js` **JS1-Б11** покажет ошибки js
+
+# Вспомогательные инструменты для ручной проверки наставником
 
 ### Этап ревью
 - `npm run test-04` **HTML1-TEST-04** показывает переполнение / недополнение элементов

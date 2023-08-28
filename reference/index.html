@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
   </head>
   <body class="page__body">
-    <header class="page-header container">
-      <span class="page-header__logo logo">
+    <header class="page-header container" data-test="header">
+      <span class="page-header__logo logo" data-test="logo">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -60,23 +60,23 @@
       <section class="hero" data-test="hero">
         <h2 class="visually-hidden">Новинки</h2>
         <div class="slider">
-          <ul class="slider__controls">
-            <li class="slider__controls-item">
+          <ul class="slider__controls swiper-pagination">
+            <li class="slider__controls-item slider-control" data-value="slide-1">
               <button class="slider__controls-button slider__controls-button--active" type="button" aria-label="Слайд номер 1. Текущий" data-value="slide-1"></button>
             </li>
-            <li class="slider__controls-item">
+            <li class="slider__controls-item slider-control" data-value="slide-2">
               <button class="slider__controls-button" type="button" aria-label="Слайд номер 2" data-value="slide-2"></button>
             </li>
-            <li class="slider__controls-item">
+            <li class="slider__controls-item slider-control" data-value="slide-3">
               <button class="slider__controls-button" type="button" aria-label="Слайд номер 3" data-value="slide-3"></button>
             </li>
           </ul>
-          <button class="slider__button slider__button--prev" type="button" aria-label="Назад" disabled>
+          <button class="slider__button slider__button--prev swiper-button-prev" type="button" aria-label="Назад" disabled>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7166 0L15 1.32082L6.56677 10L15 18.6792L13.7166 20L4 10L13.7166 0Z" />
               </svg>
           </button>
-          <button class="slider__button slider__button--next" type="button" aria-label="Вперёд">
+          <button class="slider__button slider__button--next swiper-button-next" type="button" aria-label="Вперёд">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28339 0L5 1.32082L13.4332 10L5 18.6792L6.28339 20L16 10L6.28339 0Z"/>
               </svg>

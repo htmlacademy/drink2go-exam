@@ -1,6 +1,5 @@
 module.exports = async (page, scenario, vp) => {
   console.log('SCENARIO > ' + scenario.label);
-  await require('./clickAndHoverHelper')(page, scenario);
 
   // add more ready handlers here...
   await page.waitForFunction(() => {
@@ -9,9 +8,10 @@ module.exports = async (page, scenario, vp) => {
       return true;
     });
   });
-
   await page.waitForSelector('.leaflet-marker-icon');
   await page.waitForSelector('.leaflet-tile-loaded');
+
+  await require('./clickAndHoverHelper')(page, scenario);
 
   if (scenario.content) {
     const [elementHandle] = await page.$x(`//*[contains(text(), '${scenario.content}')]`);

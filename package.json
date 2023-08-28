@@ -15,7 +15,8 @@
   "homepage": "https://github.com/htmlacademy/drink2go-etalon#readme",
   "scripts": {
     "preview": "gulp buildProd && gulp startServer",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "linthtml": "linthtml project",
+    "stylelint": "stylelint \"project/sass/**/*.scss\" --custom-syntax postcss-scss",
     "w3c": "gulp validateMarkup --silent",
     "bemlinter": "gulp lintBem --silent",
     "reference": "node reference.js",
