@@ -35,7 +35,7 @@ module.exports = {
     },
   ],
   "paths": {
-    "bitmaps_reference": "backstop_data/bitmaps_reference/test-swiper",
+    "bitmaps_reference": "backstop_data/bitmaps_reference/test-menu",
     "bitmaps_test": "backstop_data/bitmaps_test",
     "engine_scripts": "engine_scripts",
     "html_report": "backstop_data/html_report",
