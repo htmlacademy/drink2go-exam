@@ -1,0 +1,15 @@
+.page {
+  min-width: 320px;
+  font-family: var(--main-font);
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}

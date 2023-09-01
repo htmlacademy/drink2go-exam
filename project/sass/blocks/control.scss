@@ -1,0 +1,162 @@
+@use "./global/variables";
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control__input {
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.control--radio .control__input {
+  width: 24px;
+  height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border: 2px solid variables.$grey;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:checked::before {
+    border-color: variables.$primary;
+  }
+
+  &:checked::after {
+    background-color: variables.$primary;
+  }
+
+  &:hover:not(:disabled):not(:checked) {
+    &::before {
+      border-color: variables.$primary-lighter;
+    }
+
+    &::after {
+      background-color: variables.$primary-025;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primary;
+    outline-offset: 4px;
+  }
+
+  &:disabled {
+    cursor: default;
+
+    &::before {
+      border-color: variables.$grey-light;
+    }
+  }
+
+  &:checked:disabled {
+    &::after {
+      background-color: variables.$grey-light;
+    }
+  }
+}
+
+.control--checkbox .control__input {
+  width: 42px;
+  height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-color: variables.$grey;
+    border: 2px solid variables.$grey;
+    border-radius: 12px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: variables.$white;
+    border-radius: 50%;
+  }
+
+  &:checked::before {
+    background-color: variables.$primary;
+    border-color: variables.$primary;
+  }
+
+  &:checked::after {
+    left: unset;
+    right: 2px;
+  }
+
+  &:hover:not(:disabled):not(:checked) {
+    &::before {
+      background-color: variables.$primary-025;
+      border-color: variables.$primary;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primary;
+    outline-offset: 4px;
+  }
+
+  &:disabled {
+    &::before {
+      background-color: variables.$grey-light;
+      border-color: variables.$grey-light;
+    }
+
+    &::after {
+      background-color: variables.$grey-lightest;
+    }
+  }
+
+  &:checked:disabled {
+    &::after {
+      background-color: variables.$grey;
+    }
+  }
+}
+
+.control__label {
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.control__input:disabled + .control__label {
+  color: variables.$grey;
+  cursor: default;
+}

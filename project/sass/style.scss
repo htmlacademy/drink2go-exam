@@ -1,0 +1,23 @@
+/* global */
+@use "./global/fonts.scss";
+@use "./global/global.scss";
+
+/* blocks */
+@use "./blocks/catalog.scss";
+@use "./blocks/control.scss";
+@use "./blocks/custom-select.scss";
+@use "./blocks/features.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/form.scss";
+@use "./blocks/group.scss";
+@use "./blocks/header.scss";
+@use "./blocks/link-group.scss";
+@use "./blocks/main.scss";
+@use "./blocks/page.scss";
+@use "./blocks/pagination.scss";
+@use "./blocks/product.scss";
+@use "./blocks/range.scss";
+@use "./blocks/slide.scss";
+@use "./blocks/slider.scss";
+@use "./blocks/social.scss";
+@use "./blocks/sort.scss";

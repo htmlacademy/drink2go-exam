@@ -1,0 +1,112 @@
+@use "./global/variables";
+@use "./global/global";
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: variables.$white;
+  border-radius: 4px;
+  color: variables.$primary;
+  text-decoration: none;
+
+  &--current {
+    font-weight: 600;
+    background-color: transparent;
+    color: inherit;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:hover:not(.pagination__link--current):not(.pagination__link--disabled),
+  &:focus:not(.pagination__link--current):not(.pagination__link--disabled) {
+    background-color: variables.$primary-lighter;
+    color: variables.$white;
+
+    &::before {
+      background-color: variables.$white;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primary;
+    outline-offset: 2px;
+  }
+
+  &:active:not(.pagination__link--current):not(.pagination__link--disabled) {
+    background-color: variables.$primary-darker;
+  }
+
+  &--disabled {
+    background-color: variables.$grey-light;
+    color: variables.$white;
+    cursor: default;
+
+    &::before {
+      background-color: variables.$white;
+    }
+  }
+}
+
+.pagination__link--prev {
+  @media (max-width: variables.$mobile-width-only) {
+    &::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 6px;
+      mask-image: url("../../img/icons/stack.svg#small-arrow");
+      background-color: variables.$primary;
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 8px 20px;
+  }
+}
+
+.pagination__link--next {
+  @media (max-width: variables.$mobile-width-only) {
+    &::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 6px;
+      mask-image: url("../../img/icons/stack.svg#small-arrow");
+      background-color: variables.$primary;
+      transform: rotate(-90deg);
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 8px 20px;
+  }
+}
+
+.pagination__link--hidden {
+  visibility: hidden;
+}
+
+.pagination__text {
+  @media (max-width: variables.$mobile-width-only) {
+    @include global.visually-hidden;
+  }
+}

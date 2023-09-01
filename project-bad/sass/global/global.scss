@@ -1,0 +1,16 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+
+body {
+  margin: 0
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+a {
+  text-decoration: none
+}

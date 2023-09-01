@@ -27,7 +27,7 @@
 
 ### Проверка кода
 - `npm run linthtml` **HTML1-PROJ-01** покажет ошибки html
-- `npm run stylelint` **HTML1-PROJ-01** покажет ошибки css
+- `npm run stylelint` **HTML1-PROJ-01** покажет ошибки sass
 - `npm run bemlinter` **HTML2-Б5** покажет ошибки BEM
 - `npm run w3c` **HTML1-HTML-07** Валидация HTML
 - `npm run lint-js` **JS1-Б11** покажет ошибки js

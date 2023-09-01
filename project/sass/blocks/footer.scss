@@ -1,0 +1,151 @@
+@use "./global/variables";
+
+.footer {
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 30px;
+    padding: 39px 40px 40px;
+  }
+}
+
+.footer__header-wrapper {
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 20px;
+
+  @media (min-width: variables.$tablet-width) and (max-width: variables.$tablet-width-only) {
+    grid-column: 1 / -1;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: column;
+    gap: 50px;
+    justify-content: unset;
+    padding: 0;
+  }
+}
+
+.footer__logo-wrapper {
+  flex-shrink: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 2px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  width: 82px;
+  height: 36px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 170px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__logo-text {
+  display: none;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+  }
+}
+
+.footer__group {
+  position: relative;
+
+  &::before {
+    @media (max-width: variables.$mobile-width-only) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background-color: variables.$secondary;
+    }
+  }
+}
+
+.footer__copyright {
+  position: relative;
+  margin: 0;
+  padding: 21px 20px 30px;
+  font-size: 12px;
+  line-height: 16px;
+  color: variables.$grey;
+  text-align: center;
+
+  &::before {
+    @media (max-width: variables.$mobile-width-only) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background-color: variables.$secondary;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+    padding: 0;
+    padding-top: 7px;
+  }
+}
+
+.footer__copyright-link {
+  display: inline-flex;
+  gap: 4px;
+  color: inherit;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 16px;
+    mask-image: url("../../img/icons/stack.svg#htmlacademy-logo");
+    background-color: variables.$grey;
+  }
+
+  &:hover,
+  &:focus {
+    color: variables.$primary-lighter;
+
+    &::after {
+      background-color: variables.$primary-lighter;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primary;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: variables.$primary-darker;
+
+    &::after {
+      background-color: variables.$primary-darker;
+    }
+  }
+}

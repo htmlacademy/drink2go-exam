@@ -1,0 +1,94 @@
+@use "./global/variables";
+@use "./global/global";
+
+.catalog {
+  background-color: variables.$grey-lightest;
+}
+
+.catalog__wrapper {
+  padding: 50px 20px 44px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 80px 20px 90px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". badge badge ."
+      ". title title ."
+      "form body body body";
+    gap: 0 30px;
+    padding: 100px 40px 120px;
+
+    @include global.container;
+  }
+}
+
+.catalog__badge {
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-area: badge;
+  }
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  word-break: break-word;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-area: title;
+    margin-bottom: 35px;
+  }
+}
+
+.catalog__form {
+  margin-bottom: 37px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-area: form;
+  }
+}
+
+.catalog__body-wrapper {
+  @media (min-width: variables.$desktop-width) {
+    grid-area: body;
+  }
+}
+
+.catalog__sort {
+  margin-bottom: 15px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  gap: 20px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 60px;
+  }
+}

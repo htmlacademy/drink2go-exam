@@ -1,0 +1,50 @@
+.main-menu__list {
+  margin: 0;
+  margin-right: 24px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.main-menu__item {
+  margin-right: 16px;
+  padding: 2px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.main-menu__link {
+  padding: 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #333333;
+  }
+}
+
+.main-menu__link--user {
+  &::before {
+    mask: url("../../img/icons/stack.svg#user") no-repeat center / contain;
+  }
+}
+
+.main-menu__link--basket {
+  &::before {
+    mask: url("../../img/icons/stack.svg#basket") no-repeat center / contain;
+  }
+}
+
+.main-menu__link-text {
+  display: none;
+}

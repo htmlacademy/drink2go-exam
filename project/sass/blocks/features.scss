@@ -1,0 +1,135 @@
+@use "./global/variables";
+
+.features {
+  padding: 50px 20px 60px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 60px 20px 100px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 100px 40px 120px;
+  }
+}
+
+.features__badge {
+  margin: 0;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 36px;
+  text-align: center;
+  word-break: break-word;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 81px;
+  }
+}
+
+.features__list {
+  display: grid;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+    padding: 0 10px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
+}
+
+.features__item {
+  padding-top: 66px;
+  box-sizing: border-box;
+  background-size: 50px 56px;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &--speed {
+    background-image: url("../../img/icons/stack.svg#speed");
+
+    @media (min-width: variables.$tablet-width) {
+      background-position: 1px 4px;
+    }
+  }
+
+  &--fit {
+    background-image: url("../../img/icons/stack.svg#fit");
+
+    @media (min-width: variables.$tablet-width) {
+      background-position: 1px 0;
+    }
+  }
+
+  &--energy {
+    background-image: url("../../img/icons/stack.svg#energy");
+
+    @media (min-width: variables.$tablet-width) {
+      background-position: 1px 0;
+    }
+  }
+
+  &--ecology {
+    background-image: url("../../img/icons/stack.svg#ecology");
+
+    @media (min-width: variables.$tablet-width) {
+      background-position: 1px 4px;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 0;
+    padding-left: 72px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 76px;
+    padding-left: 0;
+    background-position: center top;
+  }
+}
+
+.features__subtitle {
+  margin: 0;
+  margin-bottom: 4px;
+  text-align: center;
+  word-break: break-word;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    text-align: center;
+  }
+}
+
+.features__description {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    text-align: center;
+  }
+}

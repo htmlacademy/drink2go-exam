@@ -1,0 +1,117 @@
+@use "./global/variables";
+
+.link-group {
+  padding: 20px 20px 27px;
+
+  &--contacts {
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 10px;
+  }
+}
+
+.link-group__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.link-group__list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link-group__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: variables.$primary-lighter;
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primary;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: variables.$primary-darker;
+  }
+}
+
+.link-group__contacts {
+  display: grid;
+  justify-items: start;
+  padding-top: 4px;
+  font-style: normal;
+}
+
+.link-group__address {
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  margin-bottom: 16px;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    display: block;
+    width: 13px;
+    height: 16px;
+    mask-image: url("../../img/icons/stack.svg#address");
+    background-color: variables.$primary;
+  }
+}
+
+.link-group__phone {
+  display: flex;
+  gap: 6px;
+  color: inherit;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    display: block;
+    width: 13px;
+    height: 16px;
+    mask-image: url("../../img/icons/stack.svg#phone");
+    background-color: variables.$primary;
+  }
+
+  &:hover,
+  &:focus {
+    color: variables.$primary-lighter;
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primary;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: variables.$primary-darker;
+  }
+}
