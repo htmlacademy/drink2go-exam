@@ -19,6 +19,7 @@
     "stylelint": "stylelint \"project/sass/**/*.scss\" --custom-syntax postcss-scss",
     "w3c": "gulp validateMarkup --silent",
     "bemlinter": "gulp lintBem --silent",
+    "ls-lint": "ls-lint",
     "reference": "node reference.js",
     "test-03": "backstop test --config=\"backstop-test-03.config.js\"",
     "test-04": "backstop test --config=\"backstop-test-04.config.js\"",
@@ -35,7 +36,9 @@
     "test-menu": "backstop test --config=\"backstop-test-menu.config.js\""
   },
   "devDependencies": {
+    "@linthtml/linthtml": "^0.9.5",
     "autoprefixer": "10.4.13",
+    "backstopjs": "^6.2.2",
     "browser-sync": "2.27.10",
     "del": "7.0.0",
     "gulp": "4.0.2",
@@ -49,14 +52,13 @@
     "gulp-svgmin": "4.1.0",
     "gulp-terser": "2.1.0",
     "gulp-w3c-html-validator": "5.1.3",
+    "linthtml-config-htmlacademy": "^1.0.2",
     "postcss": "8.4.19",
     "postcss-csso": "6.0.1",
     "postcss-scss": "4.0.5",
     "postcss-url": "10.1.3",
     "sass": "1.56.1",
-    "@linthtml/linthtml": "^0.9.5",
-    "backstopjs": "^6.2.2",
-    "linthtml-config-htmlacademy": "^1.0.2",
+    "@ls-lint/ls-lint": "^2.1.0",
     "stylelint": "^15.10.3",
     "stylelint-config-htmlacademy": "^2.0.4"
   }
