@@ -5,7 +5,7 @@
     <title>Интернет-магазин кофейных напитков Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+<!--    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">-->
   </head>
   <body class="page__body">
     <header class="page-header container" data-test="header">
@@ -406,7 +406,19 @@
         </div>
       </section>
 
-      <div class="map" id="map" data-test="map"></div>
+      <div class="map" id="map" data-test="map">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./img/map/map-desktop.webp 1x, ./img/map/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/map/map-tablet.webp 1x, ./img/map/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/map/map-mobile.webp 1x, ./img/map/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="./img/map/map-desktop.png 1x, ./img/map/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/map/map-tablet.png 1x, ./img/map/map-tablet@2x.png 2x">
+          <img class="main__map-image" src="./img/map/map-mobile.png" srcset="./img/map/map-mobile@2x.png 2x" width="320"
+               height="420" alt="Карта с отметкой по адресу Санкт-Петербург, набережная реки Карповки, дом 5.">
+        </picture>
+      </div>
     </main>
 
     <footer class="page__footer page-footer" data-test="footer">
@@ -495,7 +507,7 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<!--    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>-->
     <script src="./js/script.js"></script>
   </body>
 </html>

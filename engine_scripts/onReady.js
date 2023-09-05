@@ -8,8 +8,8 @@ module.exports = async (page, scenario, vp) => {
       return true;
     });
   });
-  await page.waitForSelector('.leaflet-marker-icon');
-  await page.waitForSelector('.leaflet-tile-loaded');
+  // await page.waitForSelector('.leaflet-marker-icon');
+  // await page.waitForSelector('.leaflet-tile-loaded');
 
   await require('./clickAndHoverHelper')(page, scenario);
 
