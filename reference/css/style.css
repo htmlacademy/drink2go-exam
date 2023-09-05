@@ -150,8 +150,9 @@ body {
   }
 
   .page-header__nav {
-    margin-left: 6px;
-    margin-right: 0
+    margin-left: 0;
+    margin-right: 0;
+    justify-self: end;
   }
 }
 
