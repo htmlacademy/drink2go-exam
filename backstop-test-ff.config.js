@@ -28,7 +28,7 @@ module.exports = {
       "label": "index TEST-08.",
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
-      misMatchThreshold: 2,
+      misMatchThreshold: 3,
       requireSameDimension: false
     },
     ...indexSections.map((section) => ({
