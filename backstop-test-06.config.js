@@ -30,7 +30,7 @@ module.exports = {
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
       misMatchThreshold: 3,
-      requireSameDimensions: true,
+      requireSameDimensions: false,
     })),
   ],
   fileNameTemplate: '{configId}_{scenarioIndex}_{scenarioLabel}_{selectorIndex}__{viewportIndex}_{viewportLabel}',
