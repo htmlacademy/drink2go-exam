@@ -194,7 +194,7 @@ body {
 .main-menu__link {
   position: relative;
   display: block;
-  padding: 20px 0;
+  padding: 21px 0 20px;
   color: inherit;
   text-align: center;
   font-size: 12px;
@@ -203,6 +203,9 @@ body {
   letter-spacing: .24px;
   text-transform: uppercase;
   text-decoration: none
+}
+.main-menu__item:last-child {
+  border-bottom: 1px solid #f0ebff;
 }
 
 .main-menu__link::before {
@@ -253,6 +256,10 @@ body {
 
   .main-menu__link::before {
     content: none
+  }
+
+  .main-menu__item:last-child {
+    border-bottom: none;
   }
 }
 

@@ -4,7 +4,7 @@ module.exports = {
     {
       "label": "mobile",
       "width": 320,
-      "height": 800,
+      "height": 290,
     },
   ],
   "resembleOutputOptions": {
