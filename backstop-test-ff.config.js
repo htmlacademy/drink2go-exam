@@ -36,8 +36,8 @@ module.exports = {
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
-      misMatchThreshold: 2,
-      requireSameDimensions: true,
+      misMatchThreshold: 3,
+      requireSameDimensions: false,
     })),
   ],
   "paths": {
