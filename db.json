@@ -1,30 +1,244 @@
-[{"id":1,"name":"Мокко Латте","description":"Американо с миндалем и корицей","price":592,"milk":"vegetable","country":"Ethiopia"},
-{"id":2,"name":"Карамельный Латте","description":"Латте с добавлением кокосового сахара","price":617,"milk":"animal","country":"Costa Rica"},
-{"id":3,"name":"Кокосовый Латте","description":"Кофе американо с шоколадной глазурью","price":793,"milk":"vegetable","country":"Ethiopia"},
-{"id":4,"name":"Кофе с Шоколадом","description":"Капучино с мятным сиропом","price":639,"milk":"animal","country":"Colombia"},
-{"id":5,"name":"Кофе с Молоком","description":"Кофе американо с шоколадной глазурью","price":329,"milk":"without","country":"Ethiopia"},
-{"id":6,"name":"Кофе с Шоколадом","description":"Карамельный капучино с мятным сиропом","price":669,"milk":"without","country":"Peru"},
-{"id":7,"name":"Американо","description":"Шоколадный латте с добавлением миндаля","price":510,"milk":"vegetable","country":"Brazil"},
-{"id":8,"name":"Мокко Латте","description":"Мокка с добавлением карамельного сахара","price":200,"milk":"vegetable","country":"Peru"},
-{"id":9,"name":"Кофе с Мятой","description":"Кофе без кофеина с нотками грецкого ореха","price":898,"milk":"without","country":"Ethiopia"},
-{"id":10,"name":"Кофе с Кокосом","description":"Американо с миндалем и корицей","price":607,"milk":"without","country":"Brazil"},
-{"id":11,"name":"Классический Эспрессо","description":"Кофе американо с шоколадной глазурью","price":521,"milk":"vegetable","country":"Costa Rica"},
-{"id":12,"name":"Кофе с Молоком","description":"Фильтр кофе с нотками грецкого ореха","price":721,"milk":"without","country":"Costa Rica"},
-{"id":13,"name":"Кофе с Медом","description":"Латте с добавлением кокосового сахара","price":474,"milk":"without","country":"Ethiopia"},
-{"id":14,"name":"Кофе с Мятой","description":"Американо с корицей и миндалем","price":835,"milk":"animal","country":"Brazil"},
-{"id":15,"name":"Карамельный Латте","description":"Карамельный латте с ванильным сиропом","price":881,"milk":"animal","country":"Ethiopia"},
-{"id":16,"name":"Кофе с Лимоном","description":"Капучино с шоколадным сиропом","price":273,"milk":"animal","country":"Costa Rica"},
-{"id":17,"name":"Французский Пресс","description":"Фильтр кофе с нотками грецкого ореха","price":452,"milk":"animal","country":"Colombia"},
-{"id":18,"name":"Американо","description":"Мокка с добавлением карамельного сахара","price":272,"milk":"without","country":"Ethiopia"},
-{"id":19,"name":"Американо","description":"Фильтр кофе с шоколадным сиропом","price":615,"milk":"without","country":"Costa Rica"},
-{"id":20,"name":"Кофе с Мятой","description":"Капучино с шоколадным сиропом","price":264,"milk":"animal","country":"Colombia"},
-{"id":21,"name":"Молочный Кофе","description":"Фильтр кофе с шоколадным сиропом","price":318,"milk":"without","country":"Colombia"},
-{"id":22,"name":"Капучино","description":"Карамельный капучино с мятным сиропом","price":383,"milk":"vegetable","country":"Peru"},
-{"id":23,"name":"Кофе с Лимоном","description":"Эспрессо с кокосовым молоком","price":351,"milk":"vegetable","country":"Peru"},
-{"id":24,"name":"Мятный Мокко","description":"Кофе без кофеина из Эфиопии с натуральным фермерским молоком","price":417,"milk":"animal","country":"Brazil"},
-{"id":25,"name":"Американо","description":"Карамельный капучино с мятным сиропом","price":898,"milk":"vegetable","country":"Peru"},
-{"id":26,"name":"Декаф Флэт Уайт","description":"Эспрессо с карамельной пенкой","price":540,"milk":"without","country":"Peru"},
-{"id":27,"name":"Мятный Мокко","description":"Мокка с добавлением миндаля","price":262,"milk":"animal","country":"Peru"},
-{"id":28,"name":"Эспрессо Макиато","description":"Американо с корицей и миндалем","price":652,"milk":"animal","country":"Brazil"},
-{"id":29,"name":"Ванильный Капучино","description":"Кофе без кофеина с шоколадным сиропом","price":698,"milk":"without","country":"Peru"},
-{"id":30,"name":"Кофе с Мятой","description":"Кофе без кофеина с шоколадным сиропом","price":597,"milk":"without","country":"Colombia"}]
+{
+  "drinks": [
+    {
+      "id": 1,
+      "name": "Мокко Латте",
+      "description": "Американо с миндалем и корицей",
+      "price": 592,
+      "milk": "vegetable",
+      "country": "Ethiopia"
+    },
+    {
+      "id": 2,
+      "name": "Карамельный Латте",
+      "description": "Латте с добавлением кокосового сахара",
+      "price": 617,
+      "milk": "animal",
+      "country": "Costa Rica"
+    },
+    {
+      "id": 3,
+      "name": "Кокосовый Латте",
+      "description": "Кофе американо с шоколадной глазурью",
+      "price": 793,
+      "milk": "vegetable",
+      "country": "Ethiopia"
+    },
+    {
+      "id": 4,
+      "name": "Кофе с Шоколадом",
+      "description": "Капучино с мятным сиропом",
+      "price": 639,
+      "milk": "animal",
+      "country": "Colombia"
+    },
+    {
+      "id": 5,
+      "name": "Кофе с Молоком",
+      "description": "Кофе американо с шоколадной глазурью",
+      "price": 329,
+      "milk": "without",
+      "country": "Ethiopia"
+    },
+    {
+      "id": 6,
+      "name": "Кофе с Шоколадом",
+      "description": "Карамельный капучино с мятным сиропом",
+      "price": 669,
+      "milk": "without",
+      "country": "Peru"
+    },
+    {
+      "id": 7,
+      "name": "Американо",
+      "description": "Шоколадный латте с добавлением миндаля",
+      "price": 510,
+      "milk": "vegetable",
+      "country": "Brazil"
+    },
+    {
+      "id": 8,
+      "name": "Мокко Латте",
+      "description": "Мокка с добавлением карамельного сахара",
+      "price": 200,
+      "milk": "vegetable",
+      "country": "Peru"
+    },
+    {
+      "id": 9,
+      "name": "Кофе с Мятой",
+      "description": "Кофе без кофеина с нотками грецкого ореха",
+      "price": 898,
+      "milk": "without",
+      "country": "Ethiopia"
+    },
+    {
+      "id": 10,
+      "name": "Кофе с Кокосом",
+      "description": "Американо с миндалем и корицей",
+      "price": 607,
+      "milk": "without",
+      "country": "Brazil"
+    },
+    {
+      "id": 11,
+      "name": "Классический Эспрессо",
+      "description": "Кофе американо с шоколадной глазурью",
+      "price": 521,
+      "milk": "vegetable",
+      "country": "Costa Rica"
+    },
+    {
+      "id": 12,
+      "name": "Кофе с Молоком",
+      "description": "Фильтр кофе с нотками грецкого ореха",
+      "price": 721,
+      "milk": "without",
+      "country": "Costa Rica"
+    },
+    {
+      "id": 13,
+      "name": "Кофе с Медом",
+      "description": "Латте с добавлением кокосового сахара",
+      "price": 474,
+      "milk": "without",
+      "country": "Ethiopia"
+    },
+    {
+      "id": 14,
+      "name": "Кофе с Мятой",
+      "description": "Американо с корицей и миндалем",
+      "price": 835,
+      "milk": "animal",
+      "country": "Brazil"
+    },
+    {
+      "id": 15,
+      "name": "Карамельный Латте",
+      "description": "Карамельный латте с ванильным сиропом",
+      "price": 881,
+      "milk": "animal",
+      "country": "Ethiopia"
+    },
+    {
+      "id": 16,
+      "name": "Кофе с Лимоном",
+      "description": "Капучино с шоколадным сиропом",
+      "price": 273,
+      "milk": "animal",
+      "country": "Costa Rica"
+    },
+    {
+      "id": 17,
+      "name": "Французский Пресс",
+      "description": "Фильтр кофе с нотками грецкого ореха",
+      "price": 452,
+      "milk": "animal",
+      "country": "Colombia"
+    },
+    {
+      "id": 18,
+      "name": "Американо",
+      "description": "Мокка с добавлением карамельного сахара",
+      "price": 272,
+      "milk": "without",
+      "country": "Ethiopia"
+    },
+    {
+      "id": 19,
+      "name": "Американо",
+      "description": "Фильтр кофе с шоколадным сиропом",
+      "price": 615,
+      "milk": "without",
+      "country": "Costa Rica"
+    },
+    {
+      "id": 20,
+      "name": "Кофе с Мятой",
+      "description": "Капучино с шоколадным сиропом",
+      "price": 264,
+      "milk": "animal",
+      "country": "Colombia"
+    },
+    {
+      "id": 21,
+      "name": "Молочный Кофе",
+      "description": "Фильтр кофе с шоколадным сиропом",
+      "price": 318,
+      "milk": "without",
+      "country": "Colombia"
+    },
+    {
+      "id": 22,
+      "name": "Капучино",
+      "description": "Карамельный капучино с мятным сиропом",
+      "price": 383,
+      "milk": "vegetable",
+      "country": "Peru"
+    },
+    {
+      "id": 23,
+      "name": "Кофе с Лимоном",
+      "description": "Эспрессо с кокосовым молоком",
+      "price": 351,
+      "milk": "vegetable",
+      "country": "Peru"
+    },
+    {
+      "id": 24,
+      "name": "Мятный Мокко",
+      "description": "Кофе без кофеина из Эфиопии с натуральным фермерским молоком",
+      "price": 417,
+      "milk": "animal",
+      "country": "Brazil"
+    },
+    {
+      "id": 25,
+      "name": "Американо",
+      "description": "Карамельный капучино с мятным сиропом",
+      "price": 898,
+      "milk": "vegetable",
+      "country": "Peru"
+    },
+    {
+      "id": 26,
+      "name": "Декаф Флэт Уайт",
+      "description": "Эспрессо с карамельной пенкой",
+      "price": 540,
+      "milk": "without",
+      "country": "Peru"
+    },
+    {
+      "id": 27,
+      "name": "Мятный Мокко",
+      "description": "Мокка с добавлением миндаля",
+      "price": 262,
+      "milk": "animal",
+      "country": "Peru"
+    },
+    {
+      "id": 28,
+      "name": "Эспрессо Макиато",
+      "description": "Американо с корицей и миндалем",
+      "price": 652,
+      "milk": "animal",
+      "country": "Brazil"
+    },
+    {
+      "id": 29,
+      "name": "Ванильный Капучино",
+      "description": "Кофе без кофеина с шоколадным сиропом",
+      "price": 698,
+      "milk": "without",
+      "country": "Peru"
+    },
+    {
+      "id": 30,
+      "name": "Кофе с Мятой",
+      "description": "Кофе без кофеина с шоколадным сиропом",
+      "price": 597,
+      "milk": "without",
+      "country": "Colombia"
+    }
+  ]
+}
