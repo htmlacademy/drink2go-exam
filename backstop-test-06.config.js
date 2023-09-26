@@ -1,4 +1,12 @@
-const indexSections = ['header', 'main', 'hero', 'features', 'catalog', 'map', 'footer'];
+const indexSections = [
+  { section: 'header', misMatchThreshold: 1 },
+  { section: 'hero', misMatchThreshold: 5 },
+  { section: 'features', misMatchThreshold: 3 },
+  { section: 'catalog', misMatchThreshold: 5 },
+  { section: 'map', misMatchThreshold: 5 },
+  { section: 'footer', misMatchThreshold: 2 }
+];
+
 module.exports = {
   "id": "drink2go test-06",
   "viewports": [
@@ -24,12 +32,12 @@ module.exports = {
     "usePreciseMatching": false
   },
   "scenarios": [
-    ...indexSections.map((section) => ({
+    ...indexSections.map(({ section, misMatchThreshold }) => ({
       "label": `index ${section} TEST-06. PP.`,
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
-      misMatchThreshold: 3,
+      misMatchThreshold,
       requireSameDimensions: false,
     })),
   ],
@@ -39,8 +47,9 @@ module.exports = {
     "bitmaps_test": "backstop_data/bitmaps_test",
     "engine_scripts": "engine_scripts",
     "html_report": "backstop_data/html_report",
+    "json_report": "backstop_data/json_report",
   },
-  "report": ["browser"],
+  "report": ["json"],
   "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"],

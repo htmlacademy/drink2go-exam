@@ -21,14 +21,10 @@ https://nodejs.org/download/release/v16.20.2/
 - файл отчета сохранен в `backstop_data/html_report/index.html`
 
 ### Этап тестирования
-- `npm run test-06` **HTML2-Б11** служит для проверки PixelPerfect на разных разрешениях
-- `npm run test-ff` **HTML1-TEST-01** покажет отображение проекта в FireFox
-- `npm run test-03` **HTML1-TEST-03** показывает поведение на широком / узком экране
-- `npm run test-05` **HTML1-TEST-05** показывает базовые текстовые стили
+- `npm run test-blocks` **HTML2-Б11** показывает базовые текстовые стили для PixelPerfect блоков
 - `npm run test-08` **HTML1-TEST-08** покажет элементы, которые изменяют размеры при взаимодействии
 - `npm run test-07` **HTML1-TEST-07** показывает состояния интерактивных элементов
 - `npm run html-04` **HTML1-HTML-04** проверит отправку форм
-- `npm run test-logo` **HTML2-Б19** покажет адаптацию логотипа
 - `npm run test-swiper` **JS1-Б1** покажет поведение слайдера
 - `npm run test-menu` **JS1-Б1** покажет поведение меню
 
@@ -42,6 +38,8 @@ https://nodejs.org/download/release/v16.20.2/
 # Вспомогательные инструменты для ручной проверки наставником
 
 ### Этап ревью
+- `npm run test-03` **HTML1-TEST-03** показывает поведение на широком / узком экране
+- `npm run test-ff` **HTML1-TEST-01** покажет отображение целой страницы в FireFox
 - `npm run test-04` **HTML1-TEST-04** показывает переполнение / недополнение элементов
 - `npm run img-01` **HTML1-IMG-01** покажет контентные / декоративные изображения
 - `npm run html-03` **HTML1-HTML-03** покажет набор ссылок и кнопок

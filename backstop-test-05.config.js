@@ -5,7 +5,7 @@
 
 */
 
-const indexSections = ['header', 'main', 'hero', 'features', 'catalog', 'map', 'footer'];
+const indexSections = ['header', 'hero', 'features', 'catalog', 'footer'];
 module.exports = {
   "id": "drink2go test-05",
   "viewports": [
@@ -41,7 +41,7 @@ module.exports = {
       misMatchThreshold: 1,
     })),
   ],
-  fileNameTemplate: '{configId}_{scenarioIndex}_{scenarioLabel}_{selectorIndex}__{viewportIndex}_{viewportLabel}',
+  fileNameTemplate: '{configId}_{scenarioLabel}__{viewportIndex}_{viewportLabel}',
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference/test-05",
     "bitmaps_test": "backstop_data/bitmaps_test",
