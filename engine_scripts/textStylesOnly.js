@@ -37,4 +37,18 @@ module.exports = async (page, scenario, vp) => {
       s.remove();
     })
   });
+  if (scenario.content) {
+    const selectors = []
+    for (const text of [].concat(scenario.content)) {
+      const [elementHandle] = await page.$x(`//*[contains(text(), '${text}')]`);
+      if (!elementHandle) {
+        throw new Error('Element not found with text "' + text + '"');
+      }
+      await page.evaluate((element, text) => {
+        element.dataset.testText = `${text}`
+      }, elementHandle, text)
+      selectors.push(`[data-test-text="${text}"]`)
+    }
+    scenario.selectors = selectors
+  }
 };

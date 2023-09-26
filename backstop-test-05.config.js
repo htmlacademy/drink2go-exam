@@ -5,7 +5,18 @@
 
 */
 
-const indexSections = ['header', 'hero', 'features', 'catalog', 'footer'];
+const indexSections = [
+  { section: 'header', viewports: [{
+        "label": "desktop",
+        "width": 1440,
+        "height": 800,
+      }],
+    content: ['Главная', 'Доставка'] },
+  { section: 'hero', content: ['Новинка!', 'Декаф Флэт Уайт', 'Свежесваренный кофе без кофеина', '225₽', '295₽', 'Заказать'] },
+  { section: 'features', content: ['Преимущества', 'Главные причины', 'Скорость', 'Готовый напиток всегда'] },
+  { section: 'catalog', content: ['Каталог кофейных напитков', 'Цена', 'Наличие молока', 'Неважно', 'Страна произрастания', 'Бразилия', 'Эфиопия', 'Перу', 'Применить', 'Сбросить', 'Сортировка', 'Кофе без кофеина из Эфиопии', 'В корзину'] },
+  { section: 'footer', content: ['Способы оплаты', 'Медиа', 'Санкт-Петербург', 'Разработано', 'HTML Academy'] }
+];
 module.exports = {
   "id": "drink2go test-05",
   "viewports": [
@@ -32,16 +43,20 @@ module.exports = {
   },
   "onReadyScript": "onReady.js",
   "scenarios": [
-    ...indexSections.map((section) => ({
+    ...indexSections.map(({ section, content, viewports }) => ({
       "label": `index ${section} TEST-05. Шрифты.`,
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
-      selectors: [`[data-test="${section}"]`],
+      // selectors: [`[data-test="${section}"]`],
+      selectors: [],
+      // "selectorExpansion": true,
+      content,
+      viewports,
       onReadyScript: "textStylesOnly.js",
       misMatchThreshold: 1,
     })),
   ],
-  fileNameTemplate: '{configId}_{scenarioLabel}__{viewportIndex}_{viewportLabel}',
+  fileNameTemplate: '{configId}_{scenarioLabel}_{selectorIndex}_{viewportLabel}',
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference/test-05",
     "bitmaps_test": "backstop_data/bitmaps_test",
