@@ -1,135 +1,118 @@
-@use "./global/variables";
-
 .features {
-  padding: 50px 20px 60px;
+  padding: 50px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-  @media (min-width: variables.$tablet-width) {
-    padding: 60px 20px 100px;
+  @media #{$tablet-only} {
+    padding: 60px 10px 100px;
   }
 
-  @media (min-width: variables.$desktop-width) {
-    padding: 100px 40px 120px;
+  @media #{$desktop-only} {
+    padding: 100px 0 120px;
   }
 }
 
 .features__badge {
-  margin: 0;
+  order: -1;
   margin-bottom: 4px;
-  text-align: center;
-}
-
-.features__title {
-  margin: 0;
-  margin-bottom: 36px;
-  text-align: center;
-  word-break: break-word;
-
-  @media (min-width: variables.$tablet-width) {
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    margin-bottom: 81px;
-  }
 }
 
 .features__list {
   display: grid;
   gap: 32px;
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 
-  @media (min-width: variables.$tablet-width) {
+  @media #{$tablet-only} {
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 30px;
-    padding: 0 10px;
+    padding: 60px 10px 0 10px;
+    row-gap: 48px;
+    column-gap: 30px;
   }
 
-  @media (min-width: variables.$desktop-width) {
+  @media #{$desktop-only} {
     grid-template-columns: repeat(4, 1fr);
-    padding: 0;
+    padding: 80px 0 0 0;
   }
 }
 
 .features__item {
-  padding-top: 66px;
-  box-sizing: border-box;
-  background-size: 50px 56px;
-  background-repeat: no-repeat;
-  background-position: center top;
+  display: grid;
+  align-items: center;
+  text-align: center;
 
-  &--speed {
-    background-image: url("../../img/icons/stack.svg#speed");
-
-    @media (min-width: variables.$tablet-width) {
-      background-position: 1px 4px;
-    }
+  @media #{$tablet-only} {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 10px;
+    column-gap: 20px;
+    text-align: start;
   }
 
-  &--fit {
-    background-image: url("../../img/icons/stack.svg#fit");
-
-    @media (min-width: variables.$tablet-width) {
-      background-position: 1px 0;
-    }
+  &--speed {
+    --features-icon: url("../../img/icons/stack.svg#features-speed") no-repeat center;
   }
 
   &--energy {
-    background-image: url("../../img/icons/stack.svg#energy");
+    --features-icon: url("../../img/icons/stack.svg#features-energy") no-repeat center;
+  }
 
-    @media (min-width: variables.$tablet-width) {
-      background-position: 1px 0;
+  &--fit {
+    --features-icon: url("../../img/icons/stack.svg#features-fit") no-repeat center;
+  }
+
+  &--eco {
+    --features-icon: url("../../img/icons/stack.svg#features-eco") no-repeat center;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 52px;
+    height: 56px;
+    background: var(--features-icon);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media #{$tablet-only} {
+      grid-row: 1 / 3;
+      margin-bottom: auto;
     }
-  }
-
-  &--ecology {
-    background-image: url("../../img/icons/stack.svg#ecology");
-
-    @media (min-width: variables.$tablet-width) {
-      background-position: 1px 4px;
-    }
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    padding-top: 0;
-    padding-left: 72px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    padding-top: 76px;
-    padding-left: 0;
-    background-position: center top;
   }
 }
 
-.features__subtitle {
-  margin: 0;
+.features__item-heading {
+  margin-top: 10px;
   margin-bottom: 4px;
-  text-align: center;
-  word-break: break-word;
 
-  @media (min-width: variables.$tablet-width) {
-    margin-bottom: 10px;
-    text-align: left;
+  @media #{$tablet-only} {
+    margin-top: 0;
+    margin-bottom: 2px;
   }
 
-  @media (min-width: variables.$desktop-width) {
-    text-align: center;
+  @media #{$desktop-only} {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 
-.features__description {
+.features__item-description {
   margin: 0;
-  text-align: center;
+  line-height: 20px;
 
-  @media (min-width: variables.$tablet-width) {
+  @media #{$not-mobile} {
     font-size: 16px;
     line-height: 24px;
-    text-align: left;
   }
+}
 
-  @media (min-width: variables.$desktop-width) {
-    text-align: center;
+.features__heading {
+  margin-bottom: 36px;
+
+  @media #{$not-mobile} {
+    margin: 0;
   }
 }

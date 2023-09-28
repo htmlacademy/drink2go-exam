@@ -1,0 +1,138 @@
+.header {
+  position: relative;
+}
+
+.header__logo {
+  margin-left: 20px;
+  display: block;
+  box-sizing: border-box;
+  height: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @media #{$not-mobile} {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    height: 80px;
+  }
+
+  @media #{$desktop-only} {
+    margin-left: 40px;
+  }
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+
+  @media #{$tablet-only} {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  @media #{$desktop-only} {
+    display: flex;
+  }
+}
+
+.header__description {
+  display: none;
+
+  font-size: 12px;
+  line-height: 16px;
+  width: 126px;
+
+  @media #{$desktop-only} {
+    grid-column: 2 / 3;
+    display: block;
+    margin: 24px auto 24px 20px;
+  }
+}
+
+.header__user-navigation-wrapper {
+  grid-column: 3 / 4;
+  display: flex;
+
+  @media #{$tablet-only} {
+    margin-right: 20px;
+  }
+
+  @media #{$desktop-only} {
+    margin-right: 40px;
+    order: 4;
+  }
+}
+
+.header__user-navigation-toggle-wrapper {
+  position: relative;
+  width: 60px;
+
+  @media #{$not-mobile} {
+    display: none;
+  }
+
+  // @media #{$mobile-only} {
+  //   &--closed-navigation {
+  //     --menu-icon: url("../../img/icons/stack.svg#burger") no-repeat center;
+  //   }
+
+  //   &--opened-navigation {
+  //     --menu-icon: url("../../img/icons/stack.svg#close") no-repeat center;
+  //   }
+
+  //   &::before {
+  //     position: absolute;
+  //     display: block;
+  //     content: "";
+  //     top: 22px;
+  //     left: 22px;
+  //     width: 16px;
+  //     height: 16px;
+  //     background: var(--menu-icon);
+  //   }
+  // }
+}
+
+.header__user-navigation-toggle {
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  @media #{$mobile-only} {
+    &--closed-navigation {
+      --menu-icon: url("../../img/icons/stack.svg#burger") no-repeat center;
+    }
+
+    &--opened-navigation {
+      --menu-icon: url("../../img/icons/stack.svg#close") no-repeat center;
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 22px;
+      left: 22px;
+      width: 16px;
+      height: 16px;
+      background: var(--menu-icon);
+    }
+  }
+}
+
+.header__main-navigation {
+
+  @media #{$not-mobile} {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  @media #{$desktop-only} {
+    grid-column: 3 / 4;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

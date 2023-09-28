@@ -1,40 +1,20 @@
-import { isOutsideClick, isEscapeKey } from './util.js';
+let navMain = document.querySelector('.main-navigation');
+let navToggle = document.querySelector('.header__user-navigation-toggle');
 
-const headerSelector = '.header';
-const header = document.querySelector(headerSelector);
-const openedMenuClass = 'header--mobile-menu-opened';
-const closedMenuClass = 'header--mobile-menu-closed';
-const headerToggle = document.querySelector('.header__toggle');
+const initMobileMenu = () => {
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-navigation--closed')) {
+      navMain.classList.remove('main-navigation--closed');
+      navToggle.classList.remove('header__user-navigation-toggle--closed-navigation');
+      navMain.classList.add('main-navigation--opened');
+      navToggle.classList.add('header__user-navigation-toggle--opened-navigation');
+    } else {
+      navMain.classList.add('main-navigation--closed');
+      navToggle.classList.add('header__user-navigation-toggle--closed-navigation');
+      navMain.classList.remove('main-navigation--opened');
+      navToggle.classList.remove('header__user-navigation-toggle--opened-navigation');
+    }
+  })
+};
 
-function closeMenu() {
-  header.classList.remove(openedMenuClass);
-  header.classList.add(closedMenuClass);
-  headerToggle.querySelector('span').textContent = 'Открыть меню.';
-  document.removeEventListener('click', outsideClickHandler);
-  document.removeEventListener('keydown', escKeydownHandler);
-}
-
-function openMenu() {
-  header.classList.remove(closedMenuClass);
-  header.classList.add(openedMenuClass);
-  headerToggle.querySelector('span').textContent = 'Закрыть меню.';
-  document.addEventListener('click', outsideClickHandler);
-  document.addEventListener('keydown', escKeydownHandler);
-}
-
-function outsideClickHandler(evt) {
-  if (isOutsideClick(evt, headerSelector)) {
-    closeMenu();
-  }
-}
-
-function escKeydownHandler(evt) {
-  if (isEscapeKey(evt)) {
-    evt.preventDefault();
-    closeMenu();
-  }
-}
-
-header.classList.remove('header--nojs');
-
-headerToggle.addEventListener('click', () => header.classList.contains(closedMenuClass) ? openMenu() : closeMenu());
+export { initMobileMenu };

@@ -1,112 +1,18 @@
-@use "./global/variables.scss";
-
-@mixin container {
-  width: 100%;
-  max-width: variables.$max-width;
-  margin-right: auto;
-  margin-left: auto;
-  box-sizing: border-box;
-}
-
-@mixin visually-hidden {
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.visually-hidden {
-  @include visually-hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.slide-title {
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: 0.02em;
-
-  @media (min-width: variables.$tablet-width) {
-    font-size: 56px;
-    line-height: 80px;
-  }
-}
-
-.title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  color: variables.$black;
-
-  @media (min-width: variables.$tablet-width) {
-    font-size: 42px;
-    line-height: 64px;
-  }
-}
-
-.subtitle {
-  font-size: 18px;
-  line-height: 32px;
-  color: variables.$black;
-
-  @media (min-width: variables.$tablet-width) {
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-
-.badge {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: variables.$primary;
-}
-
-.button {
-  padding: 8px 20px;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: variables.$primary;
-  border: none;
-  border-radius: 4px;
-  color: variables.$white;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: variables.$primary-lighter;
-    color: variables.$white;
-  }
-
-  &:focus-visible {
-    outline: 2px solid variables.$primary;
-    outline-offset: 2px;
-  }
-
-  &:active {
-    background-color: variables.$primary-darker;
-  }
-
-  &--disabled,
-  &--disabled:hover,
-  &--disabled:focus,
-  &--disabled:active,
-  &:disabled {
-    background-color: variables.$grey;
-    color: variables.$white;
-    pointer-events: none;
-  }
+body {
+  font-family: var(--main-font);
+  color: var(--main-font-color);
 }

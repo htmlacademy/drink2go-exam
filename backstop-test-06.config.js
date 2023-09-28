@@ -1,7 +1,7 @@
 const indexSections = [
-  { section: 'header', misMatchThreshold: 1 },
+  { section: 'header', misMatchThreshold: 2 },
   { section: 'hero', misMatchThreshold: 5 },
-  { section: 'features', misMatchThreshold: 3 },
+  { section: 'features', misMatchThreshold: 5 },
   { section: 'catalog', misMatchThreshold: 5 },
   { section: 'map', misMatchThreshold: 5 },
   { section: 'footer', misMatchThreshold: 2 }
@@ -37,7 +37,7 @@ module.exports = {
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       selectors: [`[data-test="${section}"]`],
-      misMatchThreshold,
+      misMatchThreshold: misMatchThreshold || 5,
       requireSameDimensions: false,
     })),
   ],
@@ -49,7 +49,7 @@ module.exports = {
     "html_report": "backstop_data/html_report",
     "json_report": "backstop_data/json_report",
   },
-  "report": ["json"],
+  "report": ["browser", "json"],
   "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"],

@@ -1,23 +1,30 @@
-/* global */
-@use "./global/fonts.scss";
-@use "./global/global.scss";
+/* GLOBAL */
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/media.scss";
+@import "global/nouislider.min.scss";
 
-/* blocks */
-@use "./blocks/catalog.scss";
-@use "./blocks/control.scss";
-@use "./blocks/custom-select.scss";
-@use "./blocks/features.scss";
-@use "./blocks/footer.scss";
-@use "./blocks/form.scss";
-@use "./blocks/group.scss";
-@use "./blocks/header.scss";
-@use "./blocks/link-group.scss";
-@use "./blocks/main.scss";
-@use "./blocks/page.scss";
-@use "./blocks/pagination.scss";
-@use "./blocks/product.scss";
-@use "./blocks/range.scss";
-@use "./blocks/slide.scss";
-@use "./blocks/slider.scss";
-@use "./blocks/social.scss";
-@use "./blocks/sort.scss";
+/* BLOCKS */
+@import "blocks/heading.scss";
+@import "blocks/button.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/user-navigation.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/slider.scss";
+@import "blocks/main-index.scss";
+@import "blocks/badge.scss";
+@import "blocks/features.scss";
+@import "blocks/catalog.scss";
+@import "blocks/filters-form.scss";
+@import "blocks/price.scss";
+@import "blocks/item.scss";
+@import "blocks/milk-availability.scss";
+@import "blocks/origin-country.scss";
+@import "blocks/label-name.scss";
+@import "blocks/map.scss";
+@import "blocks/social-list.scss";
+@import "blocks/footer.scss";
+@import "blocks/footer-navigation.scss";
+@import "blocks/contacts.scss";

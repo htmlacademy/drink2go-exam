@@ -1,32 +1,45 @@
-@use "./global/variables";
-@use "./global/global";
-
 .page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: var(--main-font);
   font-size: 14px;
-  line-height: 20px;
-  color: variables.$black;
-  background-color: variables.$white;
+  line-height: 18px;
 }
 
-.page__header {
-  @media (min-width: variables.$desktop-width) {
-    @include global.container;
+.page__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.page__centerer {
+  margin: 0 auto;
+
+  @media #{$mobile-only} {
+    width: 320px;
+  }
+
+  @media #{$tablet-only} {
+    width: 768px;
+  }
+
+  @media #{$desktop-only} {
+    width: 1440px;
   }
 }
 
-.page__main {
-  flex-grow: 1;
-}
+.page__container {
+  margin: 0 auto;
 
-.page__footer {
-  @media (min-width: variables.$desktop-width) {
-    @include global.container;
+  @media #{$mobile-only} {
+    width: 280px;
+  }
+
+  @media #{$tablet-only} {
+    width: 728px;
+  }
+
+  @media #{$desktop-only} {
+    width: 1360px;
   }
 }

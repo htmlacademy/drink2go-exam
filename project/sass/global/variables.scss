@@ -1,21 +1,5 @@
-/* colors */
-$white: #ffffff;
-$grey-lightest: #f8f8f8;
-$grey-light: #e2e2e2;
-$grey: #bdbdbd;
-$black: #333333;
+/* здесь используйте глобальные переменные */
 
-$primary-lighter: #9070ec;
-$primary: #7859cf;
-$primary-darker: #593cac;
-$primary-025: rgba($primary, 0.25);
-$secondary: #f0ebff;
-
-/* viewport */
-$mobile-width-only: 767.9px;
-$tablet-width: 768px;
-$tablet-width-only: 1439.9px;
-$desktop-width: 1440px;
-
-/* others */
-$max-width: 1600px;
+:root {
+  --main-font-color: #333333;
+}

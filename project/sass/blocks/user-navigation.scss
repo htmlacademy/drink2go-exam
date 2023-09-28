@@ -1,0 +1,73 @@
+.user-navigation__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media #{$desktop-only} {
+    gap: 20px;
+  }
+}
+
+.user-navigation__link-name {
+  @media #{$not-desktop} {
+    display: none;
+  }
+}
+
+.user-navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+
+
+  @media #{$not-mobile} {
+    height: 80px;
+  }
+
+  @media #{$desktop-only} {
+    gap: 8px;
+    padding: 32px 20px;
+    width: auto;
+    height: auto;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @media #{$desktop-only} {
+      --icon-color: #7859cf;
+      color: #7859cf;
+    }
+  }
+
+  &:active {
+    background: #f0ebff;
+  }
+
+  &--account {
+    --navigation-icon: url("../../img/icons/stack.svg#account") no-repeat center;
+  }
+
+  &--basket {
+    --navigation-icon: url("../../img/icons/stack.svg#basket") no-repeat center;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    mask: var(--navigation-icon, none);
+    background: var(--icon-color, #333333);
+  }
+}

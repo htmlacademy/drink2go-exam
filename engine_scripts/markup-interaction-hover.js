@@ -1,11 +1,11 @@
-module.exports = async (page, scenario) => {
+module.exports = async (page, { section = 'body' }, scenario) => {
   await page.waitForFunction(() => {
     return document.fonts.ready.then(() => {
       console.log('Fonts loaded');
       return true;
     });
   });
-  const interactiveElsSelector = "a, button, input[type='radio'], input[type='checkbox']";
+  const interactiveElsSelector = `${section} :is(a, button, label, input[type='radio'], input[type='checkbox'])`;
   const content = `
       const preventer = (e) => e.preventDefault();
       const els = document.querySelectorAll("${interactiveElsSelector}");
@@ -63,7 +63,7 @@ module.exports = async (page, scenario) => {
     })
     const bb = await el.boundingBox();
     if (bb.width === 0 || bb.height === 0) {
-      await el.evaluate((h) => h.style.visibility = 'visible');
+      // await el.evaluate((h) => h.style.visibility = 'visible');
       continue;
     }
 

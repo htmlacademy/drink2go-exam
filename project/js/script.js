@@ -1,5 +1,9 @@
-import './mobile-menu.js';
-import './slider.js';
-import './sort.js';
-import './pagination.js';
-// import './map.js';
+/* в этот файл добавляет скрипты*/
+
+import { initMobileMenu } from './mobile-menu.js';
+import { showCurrentSlide } from './slider.js';
+import { initSlider } from './range-slider.js';
+
+initMobileMenu();
+showCurrentSlide();
+initSlider();

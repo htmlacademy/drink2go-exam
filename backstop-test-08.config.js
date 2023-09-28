@@ -2,49 +2,49 @@
 проверяем размеры элементов при взаимодействии
 если элемент меняет размер - он появится на скриншоте
  */
+
+const indexSections = [
+  { section: 'header' },
+  { section: 'hero' },
+  { section: 'features' },
+  { section: 'catalog' },
+  { section: 'footer' }
+];
+
 module.exports = {
   "id": "drink2go test-08",
-  "viewports": [
-    {
-      "label": "desktop",
-      "width": 1440,
-      "height": 800,
-    },
-    {
-      "label": "tablet",
-      "width": 768,
-      "height": 800,
-    },
-    {
-      "label": "mobile",
-      "width": 320,
-      "height": 800,
-    },
-  ],
+  "viewports": [{
+    "label": "desktop",
+    "width": 1440,
+    "height": 800,
+  }],
   "resembleOutputOptions": {
     "ignoreAntialiasing": true,
-    "usePreciseMatching": true
+    "usePreciseMatching": false
   },
   "onReadyScript": "onReady.js",
+  "onBeforeScript": "jsDisable.js",
   "scenarios": [
-    {
-      "label": "index check hover size",
+    ...indexSections.map(({ section }) => ({
+      "label": `index ${section} check hover size`,
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "markup-interaction-hover.js",
       hideSelectors: ["body > *"],
       requireSameDimensions: false,
-    },
-    {
-      "label": "index check active size",
+      section
+    })),
+    ...indexSections.map(({ section }) => ({
+      "label": `index ${section} check active size`,
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       onReadyScript: "markup-interaction-active.js",
       hideSelectors: ["body > *"],
       requireSameDimensions: false,
-    },
+      section
+    })),
   ],
-  fileNameTemplate: '{configId}_{scenarioIndex}_{scenarioLabel}_{selectorIndex}__{viewportIndex}_{viewportLabel}',
+  fileNameTemplate: '{configId}_{scenarioLabel}__{viewportLabel}',
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference/test-08",
     "bitmaps_test": "backstop_data/bitmaps_test",

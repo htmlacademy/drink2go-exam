@@ -1,11 +1,11 @@
-module.exports = async (page, scenario) => {
+module.exports = async (page, { section = 'body' }, vp) => {
   await page.waitForFunction(() => {
     return document.fonts.ready.then(() => {
       console.log('Fonts loaded');
       return true;
     });
   });
-  const interactiveElsSelector = "a, button, input[type='radio'], input[type='checkbox']";
+  const interactiveElsSelector = `${section} :is(a, button, label, input[type='radio'], input[type='checkbox'])`;
   const content = `
       const preventer = (e) => e.preventDefault();
       const els = document.querySelectorAll("${interactiveElsSelector}");
@@ -15,7 +15,6 @@ module.exports = async (page, scenario) => {
         mouseEvts.forEach((me) => el.addEventListener(me, preventer));
       });
     `;
-
   await page.addScriptTag({ content });
 
   // 1. Получаем список интерактивных элементов: a, button, input[radio, checkbox]
@@ -63,7 +62,7 @@ module.exports = async (page, scenario) => {
     })
     const bb = await el.boundingBox();
     if (bb.width === 0 || bb.height === 0) {
-      await el.evaluate((h) => h.style.visibility = 'visible');
+      // await el.evaluate((h) => h.style.visibility = 'visible');
       continue;
     }
 
@@ -80,7 +79,6 @@ module.exports = async (page, scenario) => {
     // эмулируем page.mouse.move(координаты элемента),
     //   el.hover() тоже подойдёт
     await el.hover();
-
 
     const bbHover = await el.boundingBox();
     const nbHover = ne ? await ne.boundingBox() : null;

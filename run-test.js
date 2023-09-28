@@ -2,11 +2,12 @@ const fs = require('node:fs/promises');
 const backstop = require('backstopjs');
 const ppConfig = require('./backstop-test-06.config');
 const fontsConfig = require('./backstop-test-05.config');
+const interactionConfig = require('./backstop-test-08.config');
 
 (async () => {
   let passedSelectors
   try {
-    await backstop('test', {config: ppConfig});
+    await backstop('test', { config: ppConfig });
     console.log('All blocks passed')
   } catch (e) {
     console.log('mismatch blocks detected')
@@ -15,7 +16,12 @@ const fontsConfig = require('./backstop-test-05.config');
     const report = JSON.parse(reportFile)
     const passed = report.tests
       .filter(({ status }) => status === 'pass')
-      .map(({ pair: { viewportLabel, selector } }) => ({ selector, viewportLabel }))
+      .map(({
+              pair: {
+                viewportLabel,
+                selector,
+              },
+            }) => ({ selector, viewportLabel }))
       .reduce((acc, { viewportLabel, selector }) => {
         acc[selector] = acc[selector]?.add(viewportLabel) ?? new Set([viewportLabel]);
         return acc;
@@ -28,12 +34,16 @@ const fontsConfig = require('./backstop-test-05.config');
         return (match[1]);
       }).join('|')
   }
-  try {
-    await backstop('test', {
-      config: fontsConfig,
-      filter: passedSelectors
-    });
-  } catch (e) {
-    
+  const config05 = {
+    ...fontsConfig,
+    scenarios: fontsConfig.scenarios.filter(({ label }) => !!label.match(passedSelectors)),
   }
+  await fs.writeFile('./backstop-test-05.config.json', JSON.stringify(config05, null, 2), 'utf8')
+
+  const config08 = {
+    ...interactionConfig,
+    scenarios: interactionConfig.scenarios.filter(({ label }) => !!label.match(passedSelectors)),
+  }
+  await fs.writeFile('./backstop-test-08.config.json', JSON.stringify(config08, null, 2), 'utf8')
+
 })()
