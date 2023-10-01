@@ -1,0 +1,162 @@
+@use "./global/variables";
+
+.slider {
+  position: relative;
+}
+
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.slider__list {
+  --slides: 3;
+
+  display: flex;
+  width: calc(100% * var(--slides));
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  --transform: translateX(0%);
+  transform: var(--transform);
+  transition: transform 0.3s;
+}
+
+.slider--nojs .slider__list {
+  flex-direction: column;
+  width: unset;
+}
+
+.slider__item {
+  width: calc(100% / var(--slides));
+}
+
+.slider--nojs .slider__item {
+  width: unset;
+}
+
+.slider__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  width: 20px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--prev:not(:disabled):hover,
+  &--prev:not(:disabled):focus {
+    background-image: linear-gradient(90deg, variables.$white 0%, rgba(variables.$white, 0) 100%);
+  }
+
+  &--prev:not(:disabled):active {
+    background-image: linear-gradient(90deg, rgba(variables.$primary, 0.25) 0%, rgba(variables.$primary, 0) 100%);
+  }
+
+  &--next {
+    right: 0;
+  }
+
+  &--next:not(:disabled):hover,
+  &--next:not(:disabled):focus {
+    background-image: linear-gradient(270deg, variables.$white 0%, rgba(variables.$white, 0) 100%);
+  }
+
+  &--next:not(:disabled):active {
+    background-image: linear-gradient(270deg, rgba(variables.$primary, 0.25) 0%, rgba(variables.$primary, 0) 100%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primary;
+    outline-offset: 0;
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 20px;
+    margin: auto;
+    mask-image: url("../../img/icons/stack.svg#arrow");
+    background-color: variables.$primary;
+  }
+
+  &--next::before {
+    transform: rotate(180deg);
+  }
+
+  &:disabled::before {
+    background-color: variables.$grey;
+    pointer-events: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    width: 80px;
+    height: 77%;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 100%;
+  }
+}
+
+.slider--nojs .slider__button {
+  display: none;
+}
+
+.slider__togglers-list {
+  position: absolute;
+  right: 0;
+  bottom: 70px;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+}
+
+.slider--nojs .slider__togglers-list {
+  display: none;
+}
+
+.slider__toggler {
+  display: block;
+  width: 62px;
+  height: 4px;
+  background-color: variables.$white;
+  border: none;
+  cursor: pointer;
+
+  &--current {
+    background-color: variables.$primary;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(variables.$primary, 0.25);
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primary;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: variables.$primary;
+  }
+}

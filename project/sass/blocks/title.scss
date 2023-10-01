@@ -1,0 +1,12 @@
+.title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+
+  @media (min-width: $vp-768) {
+    font-size: 42px;
+    line-height: 1.52;
+  }
+}

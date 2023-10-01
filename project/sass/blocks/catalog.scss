@@ -1,94 +1,160 @@
-@use "./global/variables";
-@use "./global/global";
-
 .catalog {
-  background-color: variables.$grey-lightest;
-}
+  padding: 50px 0 44px 0;
 
-.catalog__wrapper {
-  padding: 50px 20px 44px;
+  background-color: $color-background-lightest-grey;
 
-  @media (min-width: variables.$tablet-width) {
-    padding: 80px 20px 90px;
+  @media (min-width: $vp-768) {
+    padding: 80px 0 90px 0;
   }
 
-  @media (min-width: variables.$desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: ". badge badge ."
-      ". title title ."
-      "form body body body";
-    gap: 0 30px;
-    padding: 100px 40px 120px;
+  @media (min-width: $vp-1400) {
+    padding: 100px 0 120px 0;
+  }
+}
 
-    @include global.container;
+.catalog__content-wrapper {
+  @media (min-width: $vp-1400) {
+    display: grid;
+    max-width: 1360px;
+    margin: 0 auto;
+
+    gap: 30px;
+    grid-template-columns: 0.24fr 0.76fr;
   }
 }
 
 .catalog__badge {
-  margin: 0;
-  margin-bottom: 5px;
-  text-align: center;
+  display: block;
+  margin: 0 0 4px 0;
 
-  @media (min-width: variables.$desktop-width) {
-    grid-area: badge;
-  }
+  text-align: center;
 }
 
 .catalog__title {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+
   text-align: center;
-  word-break: break-word;
 
-  @media (min-width: variables.$desktop-width) {
-    grid-area: title;
-    margin-bottom: 35px;
+  @media (min-width: $vp-1400) {
+    margin: 0 0 40px 0;
   }
 }
 
-.catalog__form {
-  margin-bottom: 37px;
+.catalog__filter {
+  margin: 0 0 35px 0;
 
-  @media (min-width: variables.$tablet-width) {
-    margin-bottom: 41px;
+  @media (min-width: $vp-768) {
+    margin: 0 0 40px 0;
   }
 
-  @media (min-width: variables.$desktop-width) {
-    grid-area: form;
-  }
-}
-
-.catalog__body-wrapper {
-  @media (min-width: variables.$desktop-width) {
-    grid-area: body;
+  @media (min-width: $vp-1400) {
+    width: 100%;
+    margin: 0;
   }
 }
 
 .catalog__sort {
-  margin-bottom: 15px;
+  margin: 0 0 16px 0;
 
-  @media (min-width: variables.$tablet-width) {
-    margin-bottom: 25px;
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: end;
+    margin: 0 -31px 25px 0;
+  }
+
+  @media (min-width: $vp-1400) {
+    margin: 0 -51px 23px 0;
   }
 }
 
-.catalog__list {
-  display: grid;
-  gap: 20px;
-  margin: 0;
-  margin-bottom: 40px;
+.catalog__card-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 40px 0;
   padding: 0;
-  list-style-type: none;
 
-  @media (min-width: variables.$tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    margin: 0 0 70px 0;
+
     gap: 30px;
-    margin-bottom: 70px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: $vp-1400) {
+    display: grid;
+    margin: 0 0 58px 0;
+
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 60px;
   }
+}
+
+.catalog__card-item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 20px 20px;
+
+  background-color: $color-default-white;
+  border-radius: 4px;
+
+  @media (min-width: $vp-768) {
+    padding: 50px 30px 30px 30px;
+  }
+
+  & img {
+    display: block;
+    margin: 0 auto 24px auto;
+
+    @media (min-width: $vp-768) {
+      margin: 0 auto 30px auto;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.catalog__card-name {
+  margin: 0 0 4px 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 10px 0;
+
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+.catalog__card-description {
+  margin: 0 0 16px 0;
+
+  font-size: 14px;
+  line-height: 1.43;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 20px 0;
+  }
+}
+
+.catalog__order-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.catalog__card-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
 }

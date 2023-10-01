@@ -1,0 +1,17 @@
+.map {
+  height: 420px;
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    height: 480px;
+  }
+
+  @media (min-width: $vp-1400) {
+    height: 540px;
+  }
+}
+
+.map__fallback {
+  display: block;
+  width: 100%;
+}

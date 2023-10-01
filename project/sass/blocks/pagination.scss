@@ -1,112 +1,137 @@
-@use "./global/variables";
-@use "./global/global";
-
 .pagination {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 20px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+
+  list-style: none;
+
+  gap: 10px;
+
+  @media (min-width: $vp-768) {
+    justify-content: end;
+
+    gap: 20px;
+  }
+}
+
+.pagination__item {
+  display: flex;
+  min-width: 40px;
 }
 
 .pagination__link {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 40px;
-  min-height: 40px;
+  width: 100%;
   padding: 8px;
-  box-sizing: border-box;
+
+  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  background-color: variables.$white;
+  line-height: 1.5;
+  text-align: center;
+  color: $color-base-primary;
+
+  background-color: $color-default-white;
   border-radius: 4px;
-  color: variables.$primary;
-  text-decoration: none;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-default-white;
+
+      background-color: $color-alt-primary-lighter;
+
+      & svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  &:focus {
+    background-color: $color-alt-primary-lighter;
+
+    & svg {
+      fill: $color-default-white;
+    }
+  }
+
+  &:active {
+    background-color: $color-alt-primary-darker;
+  }
 
   &--current {
     font-weight: 600;
-    background-color: transparent;
-    color: inherit;
-    cursor: default;
+    color: $color-base-black;
+
+    background-color: $color-transparent;
+    cursor: auto;
+
     pointer-events: none;
-  }
 
-  &:hover:not(.pagination__link--current):not(.pagination__link--disabled),
-  &:focus:not(.pagination__link--current):not(.pagination__link--disabled) {
-    background-color: variables.$primary-lighter;
-    color: variables.$white;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-transparent;
+      }
+    }
 
-    &::before {
-      background-color: variables.$white;
+    &:focus {
+      background-color: $color-transparent;
+    }
+
+    &:active {
+      background-color: $color-transparent;
     }
   }
 
-  &:focus-visible {
-    outline: 2px solid variables.$primary;
-    outline-offset: 2px;
-  }
+  &--arrow {
+    @media (min-width: $vp-768) {
+      padding: 8px 20px;
+    }
 
-  &:active:not(.pagination__link--current):not(.pagination__link--disabled) {
-    background-color: variables.$primary-darker;
+    & svg {
+      @media (min-width: $vp-768) {
+        display: none;
+      }
+    }
   }
 
   &--disabled {
-    background-color: variables.$grey-light;
-    color: variables.$white;
-    cursor: default;
+    font-weight: 400;
+    color: $color-default-white;
 
-    &::before {
-      background-color: variables.$white;
+    background-color: $color-alt-light-grey;
+
+    pointer-events: none;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-alt-light-grey;
+      }
+    }
+
+    &:focus {
+      background-color: $color-alt-light-grey;
+    }
+
+    &:active {
+      background-color: $color-alt-light-grey;
+    }
+
+    & svg {
+      fill: $color-default-white;
+    }
+
+    @media (min-width: $vp-768) {
+      &.pagination__link--arrow {
+        display: none;
+      }
     }
   }
 }
 
-.pagination__link--prev {
-  @media (max-width: variables.$mobile-width-only) {
-    &::before {
-      content: "";
-      display: block;
-      width: 10px;
-      height: 6px;
-      mask-image: url("../../img/icons/stack.svg#small-arrow");
-      background-color: variables.$primary;
-      transform: rotate(90deg);
-    }
-  }
+.pagination__arrow-text {
+  display: none;
 
-  @media (min-width: variables.$tablet-width) {
-    padding: 8px 20px;
-  }
-}
-
-.pagination__link--next {
-  @media (max-width: variables.$mobile-width-only) {
-    &::before {
-      content: "";
-      display: block;
-      width: 10px;
-      height: 6px;
-      mask-image: url("../../img/icons/stack.svg#small-arrow");
-      background-color: variables.$primary;
-      transform: rotate(-90deg);
-    }
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    padding: 8px 20px;
-  }
-}
-
-.pagination__link--hidden {
-  visibility: hidden;
-}
-
-.pagination__text {
-  @media (max-width: variables.$mobile-width-only) {
-    @include global.visually-hidden;
+  @media (min-width: $vp-768) {
+    display: block;
   }
 }

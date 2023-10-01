@@ -1,0 +1,160 @@
+.advantages {
+  padding: 50px 0 60px;
+
+  @media (min-width: $vp-768) {
+    padding: 60px 0 100px;
+  }
+
+  @media (min-width: $vp-1400) {
+    padding: 100px 0 120px;
+  }
+}
+
+.advantages__badge {
+  display: block;
+  margin: 0 0 4px 0;
+
+  text-align: center;
+}
+
+.advantages__title {
+  margin: 0 0 36px 0;
+
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 60px 0;
+  }
+
+  @media (min-width: $vp-1400) {
+    margin: 0 0 80px 0;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 32px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    column-gap: 10px;
+    row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $vp-1400) {
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.advantages__item {
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    text-align: left;
+  }
+
+  @media (min-width: $vp-1400) {
+    text-align: center;
+  }
+}
+
+.advantages__name {
+  position: relative;
+
+  margin: 0 0 4px 0;
+  padding: 66px 0 0 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 10px 0;
+    padding: 0 0 0 82px;
+
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $vp-1400) {
+    padding: 76px 0 0 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 52px;
+    height: 56px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 52px 56px;
+    transform: translateX(-50%);
+
+    @media (min-width: $vp-768) {
+      left: 10px;
+
+      transform: none;
+    }
+
+    @media (min-width: $vp-1400) {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  &--speed {
+    &::before {
+      background-image: url("../../img/icons/stack.svg#speed");
+    }
+  }
+
+  &--comfort {
+    &::before {
+      background-image: url("../../img/icons/stack.svg#comfort");
+    }
+  }
+
+  &--cheerfulness {
+    &::before {
+      background-image: url("../../img/icons/stack.svg#cheerfulness");
+    }
+  }
+
+  &--eco-friendly {
+    &::before {
+      background-image: url("../../img/icons/stack.svg#eco-friendly");
+    }
+  }
+}
+
+.advantages__description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.43;
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 0 82px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $vp-1400) {
+    padding: 0;
+  }
+}

@@ -1,21 +1,50 @@
-/* colors */
-$white: #ffffff;
-$grey-lightest: #f8f8f8;
-$grey-light: #e2e2e2;
-$grey: #bdbdbd;
-$black: #333333;
+// Colors
+//----------------------------------------------------------------------------
 
-$primary-lighter: #9070ec;
-$primary: #7859cf;
-$primary-darker: #593cac;
-$primary-025: rgba($primary, 0.25);
-$secondary: #f0ebff;
+// Default
 
-/* viewport */
-$mobile-width-only: 767.9px;
-$tablet-width: 768px;
-$tablet-width-only: 1439.9px;
-$desktop-width: 1440px;
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
 
-/* others */
-$max-width: 1600px;
+// Project-palette
+
+// Base
+
+$color-base-black: #333333;
+$color-base-grey: #bdbdbd;
+$color-base-primary: #7859cf;
+$color-base-secondary: #f0ebff;
+
+// Alt
+
+$color-alt-primary-opacity: rgba(120, 89, 207, 0.25);
+$color-alt-primary-lighter: #9070ec;
+$color-alt-primary-darker: #593cac;
+$color-alt-light-grey: #e2e2e2;
+
+// Background
+
+$color-background-lightest-grey: #f8f8f8;
+$color-background-flat-white: #f3ebe1;
+$color-background-lavender-latte: #eae6fc;
+$color-background-espresso: #e5e6e8;
+
+// Typography
+//----------------------------------------------------------------------------
+
+// Sizes
+
+$fz-default: 14px;
+
+// Fonts
+
+$ff-montserrat: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// Viewports
+//----------------------------------------------------------------------------
+
+$vp-390: 390px;
+$vp-767: 767.5px;
+$vp-768: 768px;
+$vp-1400: 1400px;

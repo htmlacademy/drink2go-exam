@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $vp-1400) {
+    max-width: 1360px;
+    padding: 0;
+  }
+}

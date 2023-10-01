@@ -1,0 +1,841 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`базовые текстовые стили для ширины 320 > element 1 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element 2 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element 225₽ 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "20px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element 295₽ 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element HTML Academy 1`] = `
+{
+  "color": "rgb(189, 189, 189)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Блог 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element В корзину 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Главная 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Главные причины выбрать 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "24px",
+  "lineHeight": "36px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Готовый напиток всегда 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Декаф Флэт Уайт 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "36px",
+  "lineHeight": "48px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Доставка 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Заказать 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Интернет-магазин 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Каталог 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Каталог кофейных напитков 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "24px",
+  "lineHeight": "36px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Медиа 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Назад 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Наличие молока 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Новинка! 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Преимущества 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Применить 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Применить фильтр 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "13px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Разработано в 1`] = `
+{
+  "color": "rgb(189, 189, 189)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Сбросить 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Сбросить фильтр 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "13px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Свежесваренный кофе без кофеина 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Скорость 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "18px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Сортировка: 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element Цена 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 320 > element натуральным фермерским молоком 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element 1 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element 2 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element 225₽ 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "20px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element 295₽ 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element HTML Academy 1`] = `
+{
+  "color": "rgb(189, 189, 189)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Блог 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element В корзину 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Главная 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Главные причины выбрать 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "42px",
+  "lineHeight": "64px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Готовый напиток всегда 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Декаф Флэт Уайт 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "56px",
+  "lineHeight": "80px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Доставка 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Заказать 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Интернет-магазин 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Каталог 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Каталог кофейных напитков 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "42px",
+  "lineHeight": "64px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Медиа 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Назад 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Наличие молока 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Новинка! 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Преимущества 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Применить 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Применить фильтр 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Разработано в 1`] = `
+{
+  "color": "rgb(189, 189, 189)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Сбросить 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Сбросить фильтр 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "14px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Свежесваренный кофе без кофеина 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "20px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Скорость 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "24px",
+  "lineHeight": "36px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Сортировка: 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element Цена 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 768 > element натуральным фермерским молоком 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "20px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element 1 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element 2 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element 225₽ 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "20px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element 295₽ 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element HTML Academy 1`] = `
+{
+  "color": "rgb(189, 189, 189)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Блог 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element В корзину 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Главная 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Главные причины выбрать 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "42px",
+  "lineHeight": "64px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Готовый напиток всегда 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Декаф Флэт Уайт 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "56px",
+  "lineHeight": "80px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Доставка 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Заказать 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Интернет-магазин 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Каталог 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Каталог кофейных напитков 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "42px",
+  "lineHeight": "64px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Медиа 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "14px",
+  "lineHeight": "20px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Назад 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Наличие молока 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Новинка! 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Преимущества 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Применить 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Применить фильтр 1`] = `
+{
+  "color": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Разработано в 1`] = `
+{
+  "color": "rgb(189, 189, 189)",
+  "fontSize": "12px",
+  "lineHeight": "16px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Сбросить 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Сбросить фильтр 1`] = `
+{
+  "color": "rgb(120, 89, 207)",
+  "fontSize": "14px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Свежесваренный кофе без кофеина 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "20px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Скорость 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "24px",
+  "lineHeight": "36px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Сортировка: 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element Цена 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+}
+`;
+
+exports[`базовые текстовые стили для ширины 1440 > element натуральным фермерским молоком 1`] = `
+{
+  "color": "rgb(51, 51, 51)",
+  "fontSize": "20px",
+  "lineHeight": "32px",
+}
+`;
+
+exports[`стили при наведении > hover element 1 1`] = `
+{
+  "backgroundColor": "rgb(144, 112, 236)",
+  "color": "rgb(255, 255, 255)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element HTML Academy 1`] = `
+{
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "color": "rgb(120, 89, 207)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Блог 1`] = `
+{
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "color": "rgb(144, 112, 236)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element В корзину 1`] = `
+{
+  "backgroundColor": "rgb(144, 112, 236)",
+  "color": "rgb(255, 255, 255)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Войти 1`] = `
+{
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "color": "rgb(120, 89, 207)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Главная 1`] = `
+{
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "color": "rgb(120, 89, 207)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Доставка 1`] = `
+{
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "color": "rgb(120, 89, 207)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Заказать 1`] = `
+{
+  "backgroundColor": "rgb(144, 112, 236)",
+  "color": "rgb(255, 255, 255)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Корзина 1`] = `
+{
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "color": "rgb(120, 89, 207)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Назад 1`] = `
+{
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "color": "rgb(255, 255, 255)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Применить 1`] = `
+{
+  "backgroundColor": "rgb(144, 112, 236)",
+  "color": "rgb(255, 255, 255)",
+  "opacity": "1",
+}
+`;
+
+exports[`стили при наведении > hover element Сбросить 1`] = `
+{
+  "backgroundColor": "rgb(144, 112, 236)",
+  "color": "rgb(255, 255, 255)",
+  "opacity": "1",
+}
+`;

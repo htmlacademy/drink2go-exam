@@ -1,0 +1,237 @@
+.filter {
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    column-gap: 30px;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $vp-1400) {
+    display: block;
+  }
+}
+
+.filter__group:not(:last-child) {
+  margin: 0 0 32px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1400) {
+    margin: 0 0 30px 0;
+  }
+}
+
+.filter__group-title {
+  display: block;
+  margin: 0 0 20px 0;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0 0 0 3px;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+    margin: 0 0 21px 0;
+  }
+}
+
+.filter__group-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 20px;
+}
+
+.filter__group-label {
+  position: relative;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      & .filter__group-mark-radio {
+        border-color: $color-alt-primary-lighter;
+      }
+
+      & .filter__group-mark-radio::after {
+        background-color: $color-alt-primary-opacity;
+      }
+
+      & .filter__group-mark-checkbox {
+        background-color: $color-alt-primary-opacity;
+        border: 2px solid $color-alt-primary-lighter;
+      }
+    }
+  }
+
+  &--radio {
+    padding: 0 0 0 37px;
+
+    @media (min-width: $vp-768) {
+      padding: 0 0 0 34px;
+    }
+  }
+
+  &--checkbox {
+    padding: 0 0 0 55px;
+
+    @media (min-width: $vp-768) {
+      padding: 0 0 0 51px;
+    }
+  }
+}
+
+.filter__group-mark-radio {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 24px;
+  height: 24px;
+
+  border: 2px solid $color-base-grey;
+  border-radius: 50%;
+  transform: translateY(-50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: $color-default-white;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.filter__group-mark-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 42px;
+  height: 24px;
+
+  background-color: $color-base-grey;
+  border: 2px solid $color-base-grey;
+  border-radius: 12px;
+  transform: translateY(-50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: $color-default-white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+
+    transition: all 250ms ease-out;
+  }
+}
+
+.filter__group-input {
+  &:focus {
+    & + .filter__group-mark-radio {
+      border-color: $color-alt-primary-lighter;
+    }
+
+    & + .filter__group-mark-radio::after {
+      background-color: $color-alt-primary-opacity;
+    }
+
+    & + .filter__group-mark-checkbox {
+      background-color: $color-alt-primary-opacity;
+      border: 2px solid $color-alt-primary-lighter;
+    }
+  }
+
+
+  &:checked {
+    & + .filter__group-mark-radio {
+      border-color: $color-base-primary;
+    }
+
+    & + .filter__group-mark-radio::after {
+      background-color: $color-base-primary;
+    }
+
+    & + .filter__group-mark-checkbox {
+      background-color: $color-base-primary;
+      border-color: $color-base-primary;
+    }
+
+    & + .filter__group-mark-checkbox::after {
+      left: 18px;
+    }
+  }
+
+  &:disabled {
+    & ~ .filter__group-value {
+      color: $color-base-grey;
+    }
+
+    & + .filter__group-mark-radio {
+      border-color: $color-alt-light-grey;
+    }
+
+    & + .filter__group-mark-radio::after {
+      background-color: $color-default-white;
+    }
+
+    &:checked + .filter__group-mark-radio::after {
+      background-color: $color-alt-light-grey;
+    }
+
+    & + .filter__group-mark-checkbox {
+      background-color: $color-alt-light-grey;
+      border-color: $color-alt-light-grey;
+    }
+
+    &:checked + .filter__group-mark-checkbox::after {
+      background-color: $color-base-grey;
+    }
+  }
+}
+
+.filter__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 0 0;
+
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    margin: 40px 0 0 0;
+
+    grid-column: span 3;
+    justify-self: center;
+  }
+}
+
+.filter__button {
+  @media (min-width: $vp-1400) {
+    flex-basis: 50%;
+  }
+}
