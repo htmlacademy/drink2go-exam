@@ -1,9 +1,9 @@
 const indexSections = [
   { section: 'header', misMatchThreshold: 2 },
-  { section: 'hero', misMatchThreshold: 5 },
-  { section: 'features', misMatchThreshold: 5 },
+  { section: 'hero', misMatchThreshold: 3 },
+  { section: 'features', misMatchThreshold: 3 },
   { section: 'catalog', misMatchThreshold: 5 },
-  { section: 'map', misMatchThreshold: 5 },
+  { section: 'map', misMatchThreshold: 2 },
   { section: 'footer', misMatchThreshold: 2 }
 ];
 
@@ -29,13 +29,15 @@ module.exports = {
   "onReadyScript": "onReady.js",
   "resembleOutputOptions": {
     "ignoreAntialiasing": true,
-    "usePreciseMatching": false
+    "errorType": "movementDifferenceIntensity",
+    "transparency": 0.3,
+    scaleToSameSize: false
   },
   "scenarios": [
     ...indexSections.map(({ section, misMatchThreshold }) => ({
       "label": `index ${section} TEST-06. PP.`,
       "url": "http://localhost:3000/index.html",
-      "referenceUrl": "./reference/index.html",
+      "referenceUrl": "./figma/index.html",
       selectors: [`[data-test="${section}"]`],
       misMatchThreshold: misMatchThreshold || 5,
       requireSameDimensions: false,
