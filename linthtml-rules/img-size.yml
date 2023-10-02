@@ -1,0 +1,9 @@
+rules:
+  tag-req-attr:
+  - true
+  - img:
+    - name: width
+    - name: height
+  - svg:
+    - name: width
+    - name: height

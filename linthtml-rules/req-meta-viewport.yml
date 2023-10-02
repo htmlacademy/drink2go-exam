@@ -1,0 +1,5 @@
+plugins:
+- linthtml-rules-htmlacademy
+rules:
+  htmlacademy/req-meta-viewport:
+  - true

@@ -1,0 +1,9 @@
+customSyntax: postcss-scss
+rules:
+  selector-disallowed-list:
+  - "/^&_/"
+  - "/^&-(?:\\w)/"
+  - "/^&\\s*[>+~]?\\s*\\.?\\w/"
+  # selector-nested-pattern:
+  # - "^&(?::[:-\\w]+|--[-\\w]+)$"
+  # - splitList: true
