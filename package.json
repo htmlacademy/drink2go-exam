@@ -20,7 +20,7 @@
     "linthtml": "linthtml project",
     "img-size": "linthtml project --config=\"linthtml-rules/img-size.yml\"",
     "input-label": "linthtml project --config=\"linthtml-rules/input-label.yml\"",
-    "req-meta-viewport": "linthtml project --config=\"linthtml-rules/req-meta-viewport.yml\"",
+    "meta-viewport": "linthtml project --config=\"linthtml-rules/req-meta-viewport.yml\"",
     "stylelint": "stylelint \"project/sass/**/*.scss\"",
     "no-important": "stylelint \"project/sass/**/*.scss\" --config=\"stylelint-rules/no-important.yml\"",
     "no-id": "stylelint \"project/sass/**/*.scss\" --config=\"stylelint-rules/no-id.yml\"",
