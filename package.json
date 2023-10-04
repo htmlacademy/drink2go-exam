@@ -53,9 +53,9 @@
     "browser-sync": "2.27.10",
     "del": "7.0.0",
     "gulp": "4.0.2",
-    "gulp-html-bemlinter": "2.1.2",
+    "gulp-html-bemlinter": "2.1.4",
     "gulp-if": "3.0.0",
-    "gulp-libsquoosh": "1.1.2",
+    "gulp-sharp-responsive": "0.4.1",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "gulp-sass": "5.1.0",
@@ -73,7 +73,9 @@
     "stylelint-config-htmlacademy": "^2.0.4"
   },
   "dependencies": {
-    "lcs-image-diff": "^2.2.0"
+    "glur": "^1.1.2",
+    "lcs-image-diff": "^2.2.0",
+    "pngjs": "^7.0.0"
   },
   "editorconfig-cli": [
     "*.json",
