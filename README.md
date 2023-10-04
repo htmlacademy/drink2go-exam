@@ -31,10 +31,10 @@ https://nodejs.org/download/release/v16.20.2/
 
 ### Проверка кода
 - `npm run linthtml` **HTML1-PROJ-01** покажет ошибки html
+- `npm run stylelint` **HTML1-PROJ-01** покажет ошибки sass
 - `npm run img-size` **HTML2-Д1**
 - `npm run input-label` **HTML1-HTML-05**
 - `npm run meta-viewport` **HTML2-Б15**
-- `npm run stylelint` **HTML1-PROJ-01** покажет ошибки sass
 - `npm run no-important` **HTML1-CSS-05**
 - `npm run no-id` **HTML1-CSS-04**
 - `npm run no-extend` **HTML2-Д12**
