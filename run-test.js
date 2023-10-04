@@ -38,12 +38,12 @@ const interactionConfig = require('./test-config/backstop-test-08.config');
     ...fontsConfig,
     scenarios: fontsConfig.scenarios.filter(({ label }) => !!label.match(passedSelectors)),
   }
-  await fs.writeFile('./backstop-test-05.config.json', JSON.stringify(config05, null, 2), 'utf8')
+  await fs.writeFile('./test-config/backstop-test-05.config.json', JSON.stringify(config05, null, 2), 'utf8')
 
   const config08 = {
     ...interactionConfig,
     scenarios: interactionConfig.scenarios.filter(({ label }) => !!label.match(passedSelectors)),
   }
-  await fs.writeFile('./backstop-test-08.config.json', JSON.stringify(config08, null, 2), 'utf8')
+  await fs.writeFile('./test-config/backstop-test-08.config.json', JSON.stringify(config08, null, 2), 'utf8')
 
 })()
