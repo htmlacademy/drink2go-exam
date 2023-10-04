@@ -1,8 +1,8 @@
 const fs = require('node:fs/promises');
 const backstop = require('backstopjs');
-const ppConfig = require('./backstop-test-06.config');
-const fontsConfig = require('./backstop-test-05.config');
-const interactionConfig = require('./backstop-test-08.config');
+const ppConfig = require('./test-config/backstop-test-06.config');
+const fontsConfig = require('./test-config/backstop-test-05.config');
+const interactionConfig = require('./test-config/backstop-test-08.config');
 
 (async () => {
   let passedSelectors
