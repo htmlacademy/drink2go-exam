@@ -3,7 +3,7 @@ const RANGE_MIN = 0;
 const RANGE_MAX = 1200;
 const RANGE_START = 0;
 const RANGE_END = 900;
-
+/* global noUiSlider:readonly */
 const rangeSlider = document.querySelector('.price__range-slider');
 const priceInputs = document.querySelectorAll('.price__range-input');
 
