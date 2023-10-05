@@ -23,6 +23,7 @@ module.exports = {
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       clickSelector: "[data-test=catalog] button[type='submit']",
+      selectors: ["viewport"],
       "viewports": [
         {
           "label": "desktop",
