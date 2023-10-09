@@ -3,6 +3,7 @@ const backstop = require('backstopjs');
 const ppConfig = require('./test-config/backstop-test-06.config');
 const fontsConfig = require('./test-config/backstop-test-05.config');
 const interactionConfig = require('./test-config/backstop-test-08.config');
+const styleguideConfig = require('./test-config/backstop-test-07.config');
 
 (async () => {
   let passedSelectors
@@ -45,5 +46,11 @@ const interactionConfig = require('./test-config/backstop-test-08.config');
     scenarios: interactionConfig.scenarios.filter(({ label }) => !!label.match(passedSelectors)),
   }
   await fs.writeFile('./test-config/backstop-test-08.config.json', JSON.stringify(config08, null, 2), 'utf8')
+
+  const config07 = {
+    ...styleguideConfig,
+    scenarios: styleguideConfig.scenarios.filter(({ label }) => !!label.match(passedSelectors)),
+  }
+  await fs.writeFile('./test-config/backstop-test-07.config.json', JSON.stringify(config07, null, 2), 'utf8')
 
 })()

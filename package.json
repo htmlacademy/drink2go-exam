@@ -21,7 +21,7 @@
     "test-swiper": "backstop test --config=\"test-config/backstop-test-swiper.config.js\"",
     "test-05": "backstop test --config=\"test-config/backstop-test-05.config.json\"",
     "test-08": "backstop test --config=\"test-config/backstop-test-08.config.json\"",
-    "test-07": "backstop test --config=\"test-config/backstop-test-07.config.js\"",
+    "test-07": "backstop test --config=\"test-config/backstop-test-07.config.json\"",
     "linthtml": "linthtml project",
     "stylelint": "stylelint \"project/sass/**/*.scss\"",
     "img-size": "linthtml project --config=\"linthtml-rules/img-size.yml\"",
