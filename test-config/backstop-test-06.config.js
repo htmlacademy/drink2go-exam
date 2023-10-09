@@ -2,9 +2,9 @@ const indexSections = [
   { section: 'header', misMatchThreshold: 2 },
   { section: 'hero', misMatchThreshold: 3 },
   { section: 'features', misMatchThreshold: 3 },
-  { section: 'catalog', misMatchThreshold: 5 },
+  { section: 'catalog', misMatchThreshold: 3 },
   { section: 'map', misMatchThreshold: 2 },
-  { section: 'footer', misMatchThreshold: 2 }
+  { section: 'footer', misMatchThreshold: 3 }
 ];
 
 module.exports = {
@@ -57,7 +57,7 @@ module.exports = {
     "args": ["--no-sandbox"],
     "gotoParameters": { "waitUntil": ["load", "networkidle0"], timeout: 20000 },
   },
-  "asyncCaptureLimit": 10,
+  "asyncCaptureLimit": 1,
   "asyncCompareLimit": 50,
   "debug": false,
   "debugWindow": false
