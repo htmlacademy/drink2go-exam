@@ -9,6 +9,9 @@ module.exports = {
   },
   "extends": "htmlacademy/vanilla",
   "ignorePatterns": ["*.min.js", "**/vendor/*.js"],
+  "globals": {
+    "noUiSlider": "readonly"
+  },
   "rules": {
     // Additional rules...
   }
