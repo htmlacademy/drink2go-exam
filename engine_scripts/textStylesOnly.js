@@ -38,9 +38,14 @@ module.exports = async (page, scenario, vp) => {
     })
   });
   if (scenario.content) {
+    function xpathPrepare(xpath, searchString) {
+      return xpath.replace("$u", searchString.toUpperCase())
+        .replace("$l", searchString.toLowerCase())
+        .replace("$s", searchString.toLowerCase());
+    }
     const selectors = []
     for (const text of [].concat(scenario.content)) {
-      const [elementHandle] = await page.$x(`//*[contains(text(), '${text}')]`);
+      const [elementHandle] = await page.$x(`//${xpathPrepare("*[text()[contains(translate(., '$u', '$l'), '$s')]]", text)}`);
       if (!elementHandle) {
         throw new Error('Element not found with text "' + text + '"');
       }

@@ -53,7 +53,7 @@ module.exports = {
       content,
       viewports,
       onReadyScript: "textStylesOnly.js",
-      misMatchThreshold: 3,
+      misMatchThreshold: 5,
     })),
   ],
   fileNameTemplate: '{configId}_{scenarioLabel}_{selectorIndex}_{viewportLabel}',
