@@ -8,6 +8,7 @@ module.exports = {
     "browser": true
   },
   "extends": "htmlacademy/vanilla",
+  "ignorePatterns": ["*.min.js", "**/vendor/*.js"],
   "rules": {
     // Additional rules...
   }

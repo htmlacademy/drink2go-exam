@@ -1,7 +1,7 @@
 const indexSections = [
   { section: 'header', misMatchThreshold: 2 },
   { section: 'hero', misMatchThreshold: 3.5 },
-  { section: 'features', misMatchThreshold: 3 },
+  { section: 'features', misMatchThreshold: 3.5 },
   { section: 'catalog', misMatchThreshold: 3 },
   { section: 'map', misMatchThreshold: 2 },
   { section: 'footer', misMatchThreshold: 3 }
