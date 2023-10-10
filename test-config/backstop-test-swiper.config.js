@@ -29,7 +29,7 @@ module.exports = {
       "referenceUrl": "./reference/index.html",
       misMatchThreshold: 3,
       requireSameDimension: false,
-      clickSelectors: ['.slider-button-next', '.slider-button-prev'],
+      clickSelectors: ['.slider-button-next', '.slider-button-prev', ".slider-button-prev"],
       postInteractionWait: 500,
       selectors: [`[data-test="hero"]`],
     },
