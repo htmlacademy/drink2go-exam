@@ -42,7 +42,7 @@ module.exports = {
         [`${state}Selector`]: '*',
         onReadyScript: "interaction.js",
         postInteractionWait: 500,
-        misMatchThreshold: 1,
+        misMatchThreshold: 5,
       })
     )),
   ],
