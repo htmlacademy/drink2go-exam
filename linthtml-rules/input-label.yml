@@ -1,3 +1,7 @@
+plugins:
+  - linthtml-rules-htmlacademy
 rules:
   input-req-label:
+  - true
+  htmlacademy/input-req-label:
   - true

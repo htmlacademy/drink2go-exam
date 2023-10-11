@@ -27,6 +27,7 @@
     "img-size": "linthtml project --config=\"linthtml-rules/img-size.yml\"",
     "input-label": "linthtml project --config=\"linthtml-rules/input-label.yml\"",
     "meta-viewport": "linthtml project --config=\"linthtml-rules/req-meta-viewport.yml\"",
+    "double-br": "linthtml project --config=\"linthtml-rules/double-br.yml\"",
     "no-important": "stylelint \"project/sass/**/*.scss\" --config=\"stylelint-rules/no-important.yml\"",
     "no-id": "stylelint \"project/sass/**/*.scss\" --config=\"stylelint-rules/no-id.yml\"",
     "no-extend": "stylelint \"project/sass/**/*.scss\" --config=\"stylelint-rules/no-extend.yml\"",

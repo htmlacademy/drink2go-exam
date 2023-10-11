@@ -1,8 +1,10 @@
 {
   "extends": ["linthtml-config-htmlacademy"],
-  "attr-name-ignore-regex": "viewBox|preserveAspectRatio",
   "rules": {
-    "id-no-dup": false,
-    "attr-name-style": [true, "dash"]
+    "class-style": [true, "bem"],
+    "htmlacademy/no-double-br": false,
+    "htmlacademy/img-svg-req-dimensions": false,
+    "htmlacademy/input-req-label": false,
+    "htmlacademy/req-meta-viewport": false
   }
 }
