@@ -1,0 +1,1 @@
+const init=()=>{const e=document.querySelector(".js-toggle-button"),t=document.querySelector(".main-menu");t.classList.remove("main-menu--open"),e.classList.toggle("page-header__nav-toggle--close"),e.addEventListener("click",(e=>{t&&(t.classList.toggle("main-menu--open"),e.target.classList.toggle("page-header__nav-toggle--close"))}))};init();

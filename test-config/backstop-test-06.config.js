@@ -1,10 +1,10 @@
 const indexSections = [
   { section: 'header', misMatchThreshold: 2 },
-  { section: 'hero', misMatchThreshold: 3.5 },
-  { section: 'features', misMatchThreshold: 3.5 },
-  { section: 'catalog', misMatchThreshold: 3 },
-  { section: 'map', misMatchThreshold: 2 },
-  { section: 'footer', misMatchThreshold: 3 }
+  { section: 'hero', misMatchThreshold: 2 },
+  { section: 'features', misMatchThreshold: 2 },
+  { section: 'catalog', misMatchThreshold: 2 },
+  { section: 'map', misMatchThreshold: 1 },
+  { section: 'footer', misMatchThreshold: 2 }
 ];
 
 module.exports = {
