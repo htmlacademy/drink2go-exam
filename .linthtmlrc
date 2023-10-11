@@ -5,6 +5,7 @@
     "htmlacademy/no-double-br": false,
     "htmlacademy/img-svg-req-dimensions": false,
     "htmlacademy/input-req-label": false,
-    "htmlacademy/req-meta-viewport": false
+    "htmlacademy/req-meta-viewport": false,
+    "img-req-alt": false
   }
 }
