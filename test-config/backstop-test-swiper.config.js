@@ -39,7 +39,7 @@ module.exports = {
       "referenceUrl": "./reference/index.html",
       misMatchThreshold: 3,
       requireSameDimension: false,
-      clickSelectors: ['.slider-pagination > *:nth-child(3) button'],
+      clickSelectors: ['.slider-pagination > :where(*:nth-child(3) button, button:nth-child(3))'],
       postInteractionWait: 500,
       selectors: [`[data-test="hero"]`],
     },
