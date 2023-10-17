@@ -33,7 +33,7 @@ const styleguideConfig = require('./test-config/backstop-test-07.config');
         let pattern = /data-test="(\w+)"/;
         let match = selector.match(pattern);
         return (match[1]);
-      }).join('|')
+      }).join('|') || 'nothing good found'
   }
   const config05 = {
     ...fontsConfig,
