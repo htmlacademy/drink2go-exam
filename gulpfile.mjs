@@ -36,7 +36,7 @@ export function validateMarkup () {
 }
 
 export function processStyles () {
-  return gulp.src('project/sass/*.scss', { sourcemaps: isDevelopment })
+  return gulp.src('project/styles/*.scss', { sourcemaps: isDevelopment })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
@@ -44,7 +44,7 @@ export function processStyles () {
       autoprefixer(),
       csso()
     ]))
-    .pipe(gulp.dest('build/css', { sourcemaps: isDevelopment }))
+    .pipe(gulp.dest('build/styles', { sourcemaps: isDevelopment }))
     .pipe(browser.stream());
 }
 
