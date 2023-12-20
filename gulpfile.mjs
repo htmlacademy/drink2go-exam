@@ -49,9 +49,9 @@ export function processStyles () {
 }
 
 export function processScripts () {
-  return gulp.src('project/js/**/*.js')
+  return gulp.src('project/scripts/**/*.js')
     .pipe(terser())
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('build/scripts'))
     .pipe(browser.stream());
 }
 
@@ -105,12 +105,16 @@ export function createStack () {
     .pipe(gulp.dest('build/images/icons'));
 }
 
+const PATH_TO_SOURCE = '.project/';
+const PATHS_TO_STATIC = [
+  `${PATH_TO_SOURCE}fonts/**/*.{woff2,woff}`,
+  `${PATH_TO_SOURCE}*.ico`,
+  `${PATH_TO_SOURCE}*.webmanifest`,
+  `${PATH_TO_SOURCE}favicons/**/*.{png,svg}`,
+  `${PATH_TO_SOURCE}vendor/**/*`,
+];
 export function copyAssets () {
-  return gulp.src([
-    'project/fonts/**/*.{woff2,woff}',
-    'project/*.ico',
-    'project/*.webmanifest',
-  ], {
+  return gulp.src(PATHS_TO_STATIC, {
     base: 'project'
   })
     .pipe(gulp.dest('build'));
