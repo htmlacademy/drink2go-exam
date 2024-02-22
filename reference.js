@@ -1,5 +1,5 @@
 const fs = require('node:fs/promises');
-const backstop = require('backstopjs');
+const backstop = require('htmlacademy-backstopjs');
 
 (async () => {
   const files = await fs.readdir('./test-config/');
