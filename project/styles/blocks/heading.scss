@@ -1,0 +1,10 @@
+.heading {
+  margin: 0;
+  font: 700 24px/36px $font-primary;
+  overflow-wrap: anywhere;
+
+  @media #{$not-mobile} {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}

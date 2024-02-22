@@ -1,0 +1,105 @@
+.features {
+  padding: 50px 0 60px;
+
+  @media #{$not-mobile} {
+    padding: 60px 0 100px;
+  }
+
+  @media #{$desktop-only} {
+    padding: 100px 0 120px;
+  }
+}
+
+.features__badge {
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.features__heading {
+  margin-bottom: 36px;
+  text-align: center;
+
+  @media #{$not-mobile} {
+    margin-bottom: 60px;
+  }
+
+  @media #{$desktop-only} {
+    margin-bottom: 80px;
+  }
+}
+
+.features__list {
+  display: grid;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media #{$not-mobile} {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 20px;
+    padding-left: 10px;
+  }
+
+  @media #{$desktop-only} {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 30px;
+    padding-left: 0;
+  }
+}
+
+.features__item {
+  padding-top: 66px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 52px 56px;
+  text-align: center;
+
+  @media #{$not-mobile} {
+    padding-top: 0;
+    padding-left: 72px;
+    text-align: left;
+    background-position: top 2px left;
+  }
+
+  @media #{$desktop-only} {
+    padding-top: 76px;
+    padding-left: 0;
+    text-align: center;
+    background-position: top center;
+  }
+
+  &--speed {
+    background-image: url("../../images/icons/stack.svg#speed");
+  }
+
+  &--fit {
+    background-image: url("../../images/icons/stack.svg#fit");
+  }
+
+  &--energy {
+    background-image: url("../../images/icons/stack.svg#energy");
+  }
+
+  &--ecology {
+    background-image: url("../../images/icons/stack.svg#ecology");
+  }
+}
+
+.features__title {
+  margin-bottom: 4px;
+
+  @media #{$not-mobile} {
+    margin-bottom: 10px;
+  }
+}
+
+.features__paragraph {
+  margin: 0;
+  overflow-wrap: anywhere;
+
+  @media #{$not-mobile} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

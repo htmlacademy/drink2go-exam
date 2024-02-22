@@ -1,0 +1,14 @@
+.map__image {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+
+  @media #{$not-mobile} {
+    height: 480px;
+  }
+
+  @media #{$desktop-only} {
+    height: 540px;
+  }
+}

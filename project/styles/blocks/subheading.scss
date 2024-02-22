@@ -1,0 +1,10 @@
+.subheading {
+  margin: 0;
+  font: 700 18px/32px $font-primary;
+  overflow-wrap: anywhere;
+
+  @media #{$not-mobile} {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
