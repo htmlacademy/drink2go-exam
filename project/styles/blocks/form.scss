@@ -1,0 +1,292 @@
+@mixin checkbox-circle($position, $color) {
+  background-image: radial-gradient(circle at $position center, $color 10px, transparent 10px);
+}
+
+.form {
+  display: grid;
+  align-content: start;
+  gap: 30px;
+
+  @media #{$not-mobile} {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+  }
+
+  @media #{$desktop-only} {
+    grid-template-columns: auto;
+    row-gap: 30px;
+  }
+}
+
+.form__division {
+  display: grid;
+  align-content: start;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  overflow-wrap: anywhere;
+}
+
+.form__control-group {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, $color-base-grey, $color-base-grey);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 2px;
+}
+
+.form__range-slider {
+  height: 0;
+  margin: 10px 0 14px;
+  padding: 0 12px;
+  border: 1px solid $color-light-grey;
+  border-width: 1px 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  @media #{$not-mobile} {
+    margin-bottom: 10px;
+  }
+
+  @media #{$desktop-only} {
+    margin-bottom: 12px;
+  }
+
+  .noUi-connects {
+    overflow: visible;
+  }
+
+  .noUi-connect {
+    top: -2px;
+    height: 4px;
+    background-color: $color-primary-lighter;
+  }
+
+  .noUi-handle {
+    top: -12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $color-primary-lighter;
+    border-radius: 50%;
+    background-color: $color-base-white;
+    box-shadow: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .noUi-touch-area {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: $color-base-white;
+    background-clip: content-box;
+  }
+
+  .noUi-handle:focus .noUi-touch-area,
+  .noUi-handle:hover .noUi-touch-area {
+    background-color: $color-primary-opacity;
+  }
+
+  .noUi-handle:focus {
+    outline: none;
+  }
+
+  .noUi-handle:hover {
+    cursor: pointer;
+  }
+
+  .noUi-handle:active .noUi-touch-area {
+    background-color: $color-base-primary;
+  }
+}
+
+.form__range-slider[disabled] {
+  .noUi-connect {
+    background-color: $color-base-grey;
+  }
+
+  .noUi-handle {
+    border-color: $color-base-grey;
+    background-color: $background-color-lightest-grey;
+    pointer-events: none;
+  }
+}
+
+.form__control-label {
+  font-size: 16px;
+  line-height: 24px;
+  overflow-wrap: anywhere;
+}
+
+.form__control-input {
+  width: 118px;
+  padding: 8px 10px;
+  border: 2px solid $color-primary-lighter;
+  border-radius: 4px;
+  font: 500 16px/24px $font-primary;
+  text-align: center;
+  background-color: $color-base-white;
+  appearance: textfield;
+
+  @media #{$not-mobile} {
+    width: 88px;
+  }
+
+  @media #{$desktop-only} {
+    width: 134px;
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &::placeholder {
+    color: $color-base-grey;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: $color-primary-darker;
+  }
+
+  &:disabled {
+    border: 2px solid $color-light-grey;
+    color: $color-base-grey;
+    background: $background-color-lightest-grey;
+  }
+}
+
+.form__control--radio .form__control-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  &::before {
+    flex-shrink: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    border: 2px solid $color-base-grey;
+    border-radius: 50%;
+    background: $color-base-white;
+    background-clip: content-box;
+    content: "";
+  }
+}
+
+.form__control--radio .form__control-input:focus ~ .form__control-label::before,
+.form__control--radio:hover .form__control-label::before {
+  border-color: $color-primary-lighter;
+  background-color: transparentize($color-base-primary, 0.75); /* stylelint-disable-line function-no-unknown */
+}
+
+.form__control--radio:hover .form__control-label {
+  cursor: pointer;
+}
+
+.form__control--radio .form__control-input:checked ~ .form__control-label::before {
+  border-color: $color-base-primary;
+  background-color: $color-base-primary;
+}
+
+.form__control--radio .form__control-input:disabled ~ .form__control-label {
+  color: $color-base-grey;
+
+  &::before {
+    border-color: $color-light-grey;
+  }
+}
+
+.form__control--radio .form__control-input:disabled:checked ~ .form__control-label::before {
+  background-color: $color-light-grey;
+}
+
+.form__control--checkbox .form__control-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  &::before {
+    flex-shrink: 0;
+    display: block;
+    width: 42px;
+    height: 24px;
+    border: 2px solid $color-base-grey;
+    border-radius: 12px;
+    background: $color-base-grey;
+    content: "";
+
+    @include checkbox-circle(10px, $color-base-white);
+  }
+}
+
+.form__control--checkbox .form__control-input:focus ~ .form__control-label::before,
+.form__control--checkbox:hover .form__control-label::before {
+  border-color: $color-primary-lighter;
+  background-color: transparentize($color-base-primary, 0.75); /* stylelint-disable-line function-no-unknown */
+}
+
+.form__control--checkbox:hover .form__control-label {
+  cursor: pointer;
+}
+
+.form__control--checkbox .form__control-input:checked ~ .form__control-label::before {
+  border-color: $color-base-primary;
+  background-color: $color-base-primary;
+
+  @include checkbox-circle(28px, $color-base-white);
+}
+
+.form__control--checkbox .form__control-input:disabled ~ .form__control-label {
+  color: $color-base-grey;
+
+  &::before {
+    border-color: $color-light-grey;
+    background-color: $color-light-grey;
+
+    @include checkbox-circle(10px, $background-color-lightest-grey);
+  }
+}
+
+.form__control--checkbox .form__control-input:disabled:checked ~ .form__control-label::before {
+  @include checkbox-circle(28px, $color-base-grey);
+}
+
+.form__button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media #{$not-mobile} {
+    grid-column: 1/-1;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media #{$desktop-only} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 10px;
+  }
+}

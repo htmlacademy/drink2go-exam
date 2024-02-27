@@ -105,7 +105,7 @@ export function createStack () {
     .pipe(gulp.dest('build/images/icons'));
 }
 
-const PATH_TO_SOURCE = '.project/';
+const PATH_TO_SOURCE = './project/';
 const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}fonts/**/*.{woff2,woff}`,
   `${PATH_TO_SOURCE}*.ico`,
